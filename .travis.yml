@@ -1,0 +1,16 @@
+language: ruby
+rvm:
+- 2.0.0
+script:
+- bundle exec rake db:migrate --trace
+- RAILS_ENV=test bundle exec rake db:migrate --trace
+- bundle exec rake db:test:prepare
+- bundle exec rspec -fd spec/
+deploy:
+  provider: heroku
+  api_key:
+    secure: Wcm7ERGHMmPETpMvIVy+T6/kooYD0Ij8uyMN229aB3n2Myn4iL9NiZK77eFmEqw7xrGvZQlY0Z0sRhSnnrfdjutuF60YnTBEOODf8JXuh3M+I3TcSBM4tS8OBr3DcSC3G+4SVxQvHP8cQtLoYoJ8iUn3WVI4UDE+dcQyq76HswQ=
+  app: clansite
+  on:
+    repo: Eepa/clansite
+  run: "rake db:migrate"
