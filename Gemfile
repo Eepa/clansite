@@ -19,6 +19,8 @@ group :development, :test do
 	gem 'rspec-rails', '~> 2.14.1'
 end
 
+gem 'simplecov', require: false
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
