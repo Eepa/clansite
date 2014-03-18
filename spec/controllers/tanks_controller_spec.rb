@@ -20,6 +20,7 @@ require 'spec_helper'
 
 describe TanksController do
 
+=begin
   # This should return the minimal set of attributes required to create a valid
   # Tank. As you add validations to Tank, be sure to
   # adjust the attributes here as well.
@@ -156,5 +157,6 @@ describe TanksController do
       response.should redirect_to(tanks_url)
     end
   end
+=end
 
 end

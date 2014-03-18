@@ -20,6 +20,7 @@ require 'spec_helper'
 
 describe StylesController do
 
+=begin
   # This should return the minimal set of attributes required to create a valid
   # Style. As you add validations to Style, be sure to
   # adjust the attributes here as well.
@@ -156,5 +157,6 @@ describe StylesController do
       response.should redirect_to(styles_url)
     end
   end
+=end
 
 end

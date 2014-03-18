@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe "tanks/new" do
+=begin
   before(:each) do
     assign(:tank, stub_model(Tank,
       :name => "MyString",
@@ -19,4 +20,5 @@ describe "tanks/new" do
       assert_select "input#tank_country_id[name=?]", "tank[country_id]"
     end
   end
+=end
 end

@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe "countries/edit" do
+=begin
   before(:each) do
     @country = assign(:country, stub_model(Country,
       :name => "MyString"
@@ -15,4 +16,5 @@ describe "countries/edit" do
       assert_select "input#country_name[name=?]", "country[name]"
     end
   end
+=end
 end
