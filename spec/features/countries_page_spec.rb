@@ -7,7 +7,7 @@ describe "Countries page" do
 
 
     visit countries_path
-    save_and_open_page
+
     expect(page).to have_content 'Listing countries'
     expect(page).to have_content 'Number of countries: 0'
   end
