@@ -13,6 +13,8 @@ FactoryGirl.define do
   factory :tank do
     name "IS-7"
     tier_number 10
+    country
+    style
   end
 
 
