@@ -19,4 +19,8 @@ describe "countries/index" do
     assert_select "tr>td", :text => "Name".to_s, :count => 2
   end
 =end
-end
+
+
+
+
+ end

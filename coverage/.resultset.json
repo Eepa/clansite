@@ -262,7 +262,7 @@
         null,
         null,
         1,
-        0,
+        2,
         null,
         null,
         null,
@@ -824,6 +824,45 @@
         null,
         null
       ],
+      "/home/wadror/wadpro/clansite/spec/features/countries_page_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/wadror/wadpro/clansite/spec/features/styles_page_spec.rb": [
+
+      ],
+      "/home/wadror/wadpro/clansite/spec/features/tanks_page_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "/home/wadror/wadpro/clansite/spec/helpers/countries_helper_spec.rb": [
         1,
         null,
@@ -917,6 +956,9 @@
         null,
         1,
         1,
+        null,
+        null,
+        null,
         null,
         null,
         null,
@@ -1260,6 +1302,10 @@
         null,
         null,
         null,
+        null,
+        null,
+        null,
+        null,
         null
       ],
       "/home/wadror/wadpro/clansite/spec/views/countries/new.html.erb_spec.rb": [
@@ -1505,6 +1551,6 @@
         null
       ]
     },
-    "timestamp": 1395158741
+    "timestamp": 1395334244
   }
 }
