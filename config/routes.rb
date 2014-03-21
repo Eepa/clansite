@@ -16,6 +16,8 @@ Clansite::Application.routes.draw do
 
   resources :sessions, only:[:new, :create]
 
+  get 'join_clan', to: 'users#join_clan'
+
   get 'signin', to: 'sessions#new'
 
   delete 'signout', to: 'sessions#destroy'
