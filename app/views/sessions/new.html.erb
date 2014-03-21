@@ -2,6 +2,8 @@
 
 <%= form_tag sessions_path do %>
 
+    <p id="notice"><%= notice %></p>
+
     <%= text_field_tag :name, params[:name] %>
     <br>
     <%= submit_tag "Log in" %>

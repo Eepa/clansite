@@ -25,6 +25,8 @@ group :test do
   gem 'launchy'
 end
 
+gem 'bcrypt-ruby', '~> 3.1.2'
+
 gem 'simplecov', require: false
 
 # Use SCSS for stylesheets
