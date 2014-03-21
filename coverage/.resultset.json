@@ -399,6 +399,8 @@
         null,
         1,
         null,
+        1,
+        null,
         null
       ],
       "/home/wadror/wadpro/clansite/spec/models/country_spec.rb": [
@@ -600,6 +602,15 @@
       ],
       "/home/wadror/wadpro/clansite/app/models/user.rb": [
         1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
         null
       ],
       "/home/wadror/wadpro/clansite/spec/routing/clans_routing_spec.rb": [
@@ -1177,6 +1188,7 @@
         0,
         0,
         0,
+        0,
         null,
         null,
         null,
@@ -1193,6 +1205,6 @@
         null
       ]
     },
-    "timestamp": 1395405028
+    "timestamp": 1395410987
   }
 }
