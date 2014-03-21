@@ -18,6 +18,8 @@ Clansite::Application.routes.draw do
 
   get 'join_clan', to: 'users#join_clan'
 
+  put 'join_clan', to: 'users#update_clan_id'
+
   get 'signin', to: 'sessions#new'
 
   delete 'signout', to: 'sessions#destroy'

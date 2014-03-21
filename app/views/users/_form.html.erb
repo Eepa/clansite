@@ -20,7 +20,7 @@
 
   <% end %>
 
-
+    <% if @clans.nil? %>
     <div class="field">
         <%= f.label :password %><br>
         <%= f.password_field :password %>
@@ -33,6 +33,14 @@
 
     </div>
 
+     <% else %>
+
+        <div class="field">
+          <%= f.label :clan_id %><br>
+          <%= f.select :clan_id, options_from_collection_for_select(@clans, :id, :name, selected: @user.clan_id) %>
+        </div>
+
+     <% end %>
 
 
 

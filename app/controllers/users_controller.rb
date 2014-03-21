@@ -41,6 +41,7 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1.json
   def update
     respond_to do |format|
+
       if user_params[:name].nil? and @user = current_user and @user.update(user_params)
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
         format.json { head :no_content }
@@ -49,6 +50,27 @@ class UsersController < ApplicationController
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
+  end
+
+  def update_clan_id
+    @user = current_user
+
+    respond_to do |format|
+      if @user.update(:clan_id => update_clan_params[:clan_id])
+        format.html { redirect_to @user, notice: "User clan updated" }
+        format.json { head :no_content }
+      else
+        format.html { render action: 'edit' }
+        format.json { render json: @user.errors, status: :unprocessable_entity }
+      end
+    end
+
+
+  end
+
+  def update_clan_params
+    params.require(:user).permit(:clan_id)
+
   end
 
 
@@ -63,6 +85,11 @@ class UsersController < ApplicationController
       format.html { redirect_to users_url }
       format.json { head :no_content }
     end
+  end
+
+  def join_clan
+    @clans = Clan.all
+    @user = current_user
   end
 
   private
