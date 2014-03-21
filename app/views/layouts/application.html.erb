@@ -14,8 +14,33 @@
       <%= link_to 'styles', styles_path %>
       <%= link_to 'countries', countries_path %>
       <%= link_to 'users', users_path %>
-      <%= link_to 'signup', signup_path %>
+
+
+      |
+
+
+      <% if current_user.nil? %>
+
+          <%= link_to 'signup', signup_path  %>
+          <%= link_to 'signin', signin_path  %>
+
+      <% else %>
+
+          <%= link_to current_user.name, current_user %>
+
+          <%= link_to 'signout', signout_path, method: :delete %>
+
+      <% end %>
+
+
+
     </div>
+
+    <% if not session[:user_id].nil? %>
+
+        <p> <%= current_user.name %> signed up</p>
+
+    <% end %>
 
 <%= yield %>
 

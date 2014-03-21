@@ -1,0 +1,9 @@
+<h1>Sign in</h1>
+
+<%= form_tag sessions_path do %>
+
+    <%= text_field_tag :name, params[:name] %>
+    <br>
+    <%= submit_tag "Log in" %>
+
+<% end %>
