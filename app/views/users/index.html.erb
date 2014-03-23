@@ -24,8 +24,13 @@
             <td><%= link_to user.clan.name, clan_path(user.clan) %></td>
         <% end %>
 
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% if current_user %>
+
+            <td><%= link_to 'Edit', edit_user_path(user) %></td>
+            <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+
+        <% end %>
       </tr>
     <% end %>
   </tbody>
@@ -38,4 +43,4 @@
 
 <br>
 
-<%= link_to 'New User', new_user_path %>
+<%= link_to 'Create an account', new_user_path %>

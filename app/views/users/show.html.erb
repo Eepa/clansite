@@ -9,7 +9,7 @@
   <% if @user.clan_id.nil? %>
 
     <p>Not a member of any clan!</p>
-    <%= link_to 'Join clan', join_clan_path %>
+    <%= link_to 'Join clan', join_clan_path if current_user %>
 
 <% else %>
    <p> <%= link_to @user.clan.name, clan_path(@user.clan) %> </p>
@@ -20,4 +20,4 @@
 
 <br>
 
-<%= link_to 'Edit', edit_user_path(@user) %>
+<%= link_to 'Edit', edit_user_path(@user) if current_user %>
