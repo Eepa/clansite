@@ -1,14 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @clan.name %>
-</p>
+<h1><%= @clan.name %></h1>
+
 
 <p>
-  <strong>Description:</strong>
+  <h2><strong>Description:</strong></h2>
   <%= @clan.description %>
 </p>
 
-<%= link_to 'Edit', edit_clan_path(@clan) %> |
-<%= link_to 'Back', clans_path %>
+<%= link_to 'Edit', edit_clan_path(@clan) %>
