@@ -36,7 +36,7 @@
 
     </div>
 
-    <% if not session[:user_id].nil? %>
+    <% if not current_user.nil? %>
 
         <p> <%= current_user.name %> signed up</p>
 

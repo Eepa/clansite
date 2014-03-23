@@ -24,6 +24,8 @@ Clansite::Application.routes.draw do
 
   delete 'signout', to: 'sessions#destroy'
 
+  put 'leave_clan/:id', to: 'users#leave_clan', as: 'user_leave_clan'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

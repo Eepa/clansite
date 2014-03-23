@@ -1,6 +1,9 @@
 class TanksController < ApplicationController
   before_action :set_tank, only: [:show, :edit, :update, :destroy]
   before_action :set_countries_and_styles_for_template, only: [:new, :edit, :create, :update]
+  before_action :ensure_that_signed_in, except: [:index, :show]
+
+
 
   def set_countries_and_styles_for_template
     @countries = Country.all
