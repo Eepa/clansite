@@ -10,8 +10,10 @@
   <%= @user.clan_id %>
 </p>
 
-
+<%= link_to 'Join clan', join_clan_path %> |
 <%= link_to 'Leave clan', user_leave_clan_path, method: :put, data: {confirm: "Are you sure?"} %>
+
+<br>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
