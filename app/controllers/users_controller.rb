@@ -68,15 +68,7 @@ class UsersController < ApplicationController
         end
       end
 
-
-
-
   end
-
-
-
-
-
 
 
 
@@ -100,15 +92,14 @@ class UsersController < ApplicationController
 
     respond_to do |format|
 
-      if @user.update(:clan_id => nil) and @user == current_user
-      format.html { redirect_to user_url(@user), notice: "You have successfully left the clan!" }
-      format.json { head :no_content }
+      if current_user == @user and @user.update(:clan_id => nil)
+        format.html { redirect_to user_url(@user), notice: "You have successfully left the clan!" }
+        format.json { head :no_content }
       else
         format.html { render action: 'show' }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
-
 
   end
 
