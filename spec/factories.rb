@@ -34,6 +34,14 @@ FactoryGirl.define do
 
   end
 
+  factory :user_tank do
+
+    user
+    tank
+    rating 57
+
+  end
+
 
 
 

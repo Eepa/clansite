@@ -1,4 +1,4 @@
-<h1>Listing user_tanks</h1>
+<h1>Listing users and their tanks</h1>
 
 <table>
   <thead>
@@ -19,8 +19,13 @@
         <td><%= link_to user_tank.tank.name, tank_path(user_tank.tank) %></td>
         <td><%= user_tank.rating %></td>
         <td><%= link_to 'Show', user_tank %></td>
-        <td><%= link_to 'Edit', edit_user_tank_path(user_tank) %></td>
-        <td><%= link_to 'Destroy', user_tank, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+        <% if current_user %>
+            <td><%= link_to 'Edit', edit_user_tank_path(user_tank) %></td>
+            <td><%= link_to 'Destroy', user_tank, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+        <% end %>
+
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +33,4 @@
 
 <br>
 
-<%= link_to 'New User tank', new_user_tank_path %>
+<%= link_to 'Add a new tank', new_user_tank_path if current_user %>
