@@ -1,19 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>User:</strong>
-  <%= @user_tank.user_id %>
+  <h2><strong>User:</strong></h2>
+  <%= link_to @user_tank.user.name, user_path(@user_tank.user) %>
 </p>
 
 <p>
-  <strong>Tank:</strong>
-  <%= @user_tank.tank_id %>
+ <h2><strong>Tank:</strong></h2>
+  <%= link_to @user_tank.tank.name, tank_path(@user_tank.tank) %>
 </p>
 
 <p>
-  <strong>Rating:</strong>
+  <h2><strong>Rating:</strong></h2>
   <%= @user_tank.rating %>
 </p>
 
-<%= link_to 'Edit', edit_user_tank_path(@user_tank) %> |
-<%= link_to 'Back', user_tanks_path %>
+<%= link_to 'Edit', edit_user_tank_path(@user_tank) %>

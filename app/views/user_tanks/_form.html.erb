@@ -11,19 +11,48 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.number_field :user_id %>
-  </div>
-  <div class="field">
-    <%= f.label :tank_id %><br>
-    <%= f.number_field :tank_id %>
-  </div>
-  <div class="field">
-    <%= f.label :rating %><br>
-    <%= f.number_field :rating %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+
+    <% if @user_tank.new_record? %>
+
+        <% if @tanks.nil? %>
+
+            <p> You already have all the tanks! </p>
+
+        <% else %>
+
+
+            <div class="field">
+              <%= f.label :tank_id %><br>
+              <%= f.select :tank_id, options_from_collection_for_select(@tanks, :id, :name) %>
+
+            </div>
+
+            <div class="field">
+              <%= f.label :rating %><br>
+              <%= f.number_field :rating %>
+            </div>
+
+            <div class="actions">
+              <%= f.submit "Add a tank" %>
+            </div>
+
+        <% end %>
+
+
+     <% else %>
+
+        <div class="field">
+          <%= f.label :rating %><br>
+          <%= f.number_field :rating %>
+        </div>
+
+        <div class="actions">
+          <%= f.submit "Edit a tank" %>
+        </div>
+
+
+    <% end %>
+
+
+
 <% end %>

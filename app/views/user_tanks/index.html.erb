@@ -15,8 +15,8 @@
   <tbody>
     <% @user_tanks.each do |user_tank| %>
       <tr>
-        <td><%= user_tank.user_id %></td>
-        <td><%= user_tank.tank_id %></td>
+        <td><%= link_to user_tank.user.name, user_path(user_tank.user) %></td>
+        <td><%= link_to user_tank.tank.name, tank_path(user_tank.tank) %></td>
         <td><%= user_tank.rating %></td>
         <td><%= link_to 'Show', user_tank %></td>
         <td><%= link_to 'Edit', edit_user_tank_path(user_tank) %></td>
