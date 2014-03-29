@@ -1,5 +1,7 @@
 Clansite::Application.routes.draw do
 
+  resources :player_tanks
+
   resources :users
 
   root 'clans#index'
