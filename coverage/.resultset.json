@@ -294,10 +294,6 @@
         1,
         null
       ],
-      "/home/wadror/wadpro/clansite/app/helpers/player_tanks_helper.rb": [
-        1,
-        null
-      ],
       "/home/wadror/wadpro/clansite/app/helpers/styles_helper.rb": [
         1,
         null
@@ -306,11 +302,15 @@
         1,
         null
       ],
+      "/home/wadror/wadpro/clansite/app/helpers/user_tanks_helper.rb": [
+        1,
+        null
+      ],
       "/home/wadror/wadpro/clansite/app/helpers/users_helper.rb": [
         1,
         null
       ],
-      "/home/wadror/wadpro/clansite/app/controllers/player_tanks_controller.rb": [
+      "/home/wadror/wadpro/clansite/app/controllers/user_tanks_controller.rb": [
         1,
         1,
         null,
@@ -673,7 +673,7 @@
         null,
         null
       ],
-      "/home/wadror/wadpro/clansite/spec/helpers/player_tanks_helper_spec.rb": [
+      "/home/wadror/wadpro/clansite/spec/helpers/user_tanks_helper_spec.rb": [
         1,
         null,
         null,
@@ -805,17 +805,6 @@
         null,
         1,
         null,
-        null
-      ],
-      "/home/wadror/wadpro/clansite/spec/models/player_tank_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/home/wadror/wadpro/clansite/app/models/player_tank.rb": [
-        1,
         null
       ],
       "/home/wadror/wadpro/clansite/spec/models/style_spec.rb": [
@@ -1049,7 +1038,18 @@
         null,
         null
       ],
-      "/home/wadror/wadpro/clansite/spec/requests/player_tanks_spec.rb": [
+      "/home/wadror/wadpro/clansite/spec/models/user_tank_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/home/wadror/wadpro/clansite/app/models/user_tank.rb": [
+        1,
+        null
+      ],
+      "/home/wadror/wadpro/clansite/spec/requests/user_tanks_spec.rb": [
         1,
         null,
         1,
@@ -1290,43 +1290,6 @@
         null,
         null
       ],
-      "/home/wadror/wadpro/clansite/spec/routing/player_tanks_routing_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null
-      ],
       "/home/wadror/wadpro/clansite/spec/routing/styles_routing_spec.rb": [
         1,
         null,
@@ -1563,6 +1526,43 @@
         null,
         null
       ],
+      "/home/wadror/wadpro/clansite/spec/routing/user_tanks_routing_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
       "/home/wadror/wadpro/clansite/spec/routing/users_routing_spec.rb": [
         1,
         null,
@@ -1724,7 +1724,7 @@
         null,
         null
       ],
-      "/home/wadror/wadpro/clansite/spec/views/player_tanks/edit.html.erb_spec.rb": [
+      "/home/wadror/wadpro/clansite/spec/views/user_tanks/edit.html.erb_spec.rb": [
         1,
         null,
         1,
@@ -1748,7 +1748,7 @@
         null,
         null
       ],
-      "/home/wadror/wadpro/clansite/spec/views/player_tanks/index.html.erb_spec.rb": [
+      "/home/wadror/wadpro/clansite/spec/views/user_tanks/index.html.erb_spec.rb": [
         1,
         null,
         1,
@@ -1776,7 +1776,7 @@
         null,
         null
       ],
-      "/home/wadror/wadpro/clansite/spec/views/player_tanks/new.html.erb_spec.rb": [
+      "/home/wadror/wadpro/clansite/spec/views/user_tanks/new.html.erb_spec.rb": [
         1,
         null,
         1,
@@ -1800,7 +1800,7 @@
         null,
         null
       ],
-      "/home/wadror/wadpro/clansite/spec/views/player_tanks/show.html.erb_spec.rb": [
+      "/home/wadror/wadpro/clansite/spec/views/user_tanks/show.html.erb_spec.rb": [
         1,
         null,
         1,
@@ -1822,6 +1822,6 @@
         null
       ]
     },
-    "timestamp": 1396097384
+    "timestamp": 1396098376
   }
 }

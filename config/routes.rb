@@ -1,6 +1,6 @@
 Clansite::Application.routes.draw do
 
-  resources :player_tanks
+  resources :user_tanks
 
   resources :users
 

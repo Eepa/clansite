@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe "player_tanks/show" do
+describe "user_tanks/show" do
   before(:each) do
-    @player_tank = assign(:player_tank, stub_model(PlayerTank,
-      :player_id => 1,
+    @user_tank = assign(:user_tank, stub_model(UserTank,
+      :user_id => 1,
       :tank_id => 2,
       :rating => 3
     ))
