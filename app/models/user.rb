@@ -7,5 +7,7 @@ class User < ActiveRecord::Base
   validates :password, length: {minimum:4}, if: :password
 
   belongs_to :clan
+  has_many :user_tanks, dependent: :destroy
+  has_many :tanks, through: :user_tanks
 
 end

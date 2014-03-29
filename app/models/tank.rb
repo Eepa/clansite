@@ -6,4 +6,7 @@ class Tank < ActiveRecord::Base
   belongs_to :country
   belongs_to :style
 
+  has_many :user_tanks, dependent: :destroy
+  has_many :users, through: :user_tanks
+
 end
