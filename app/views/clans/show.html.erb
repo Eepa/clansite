@@ -8,4 +8,27 @@
   <%= @clan.description %>
 </p>
 
+<p>
+
+<h2><strong>Members:</strong></h2>
+
+<ul>
+
+  <% @clan.users.each do |user| %>
+      <li><%= link_to user.name, user %></li>
+  <% end %>
+
+
+</ul>
+
+<p>
+    <h2><strong>Tanks:</strong></h2>
+
+
+
+
+  <%= render 'tank_table' %>
+</p>
+
+
 <%= link_to 'Edit', edit_clan_path(@clan) if current_user %>

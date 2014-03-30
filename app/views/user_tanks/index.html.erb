@@ -33,4 +33,8 @@
 
 <br>
 
+<p>Users have <%= pluralize( @user_tanks.count, 'tank') %> </p>
+
+<br>
+
 <%= link_to 'Add a new tank', new_user_tank_path if current_user %>

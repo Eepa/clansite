@@ -1,0 +1,39 @@
+<% if @tank.users.empty? %>
+
+    <p>Nobody has this tank!</p>
+
+
+<% else %>
+
+    <table>
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Clan</th>
+
+
+      </tr>
+      </thead>
+
+      <tbody>
+      <% @tank.users.each do |user| %>
+          <tr>
+            <td><%= link_to user.name, user %></td>
+
+            <% if user.clan_id.nil? %>
+
+                <td>Not a member of any clan!</td>
+
+            <% else %>
+                <td><%= link_to user.clan.name, clan_path(user.clan) %></td>
+            <% end %>
+
+
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+
+<% end %>
+
+<br>
