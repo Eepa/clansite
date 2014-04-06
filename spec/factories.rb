@@ -7,11 +7,12 @@ FactoryGirl.define do
 
   factory :style do
     name "SPG"
-
+    description "Hieno tankki"
   end
 
   factory :tank do
     name "IS-7"
+    description "Hieno peli"
     tier_number 10
     country
     style
@@ -31,6 +32,7 @@ FactoryGirl.define do
     password "Test1"
     password_confirmation "Test1"
     clan
+
 
   end
 

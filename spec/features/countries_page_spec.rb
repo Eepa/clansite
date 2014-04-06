@@ -64,7 +64,7 @@ describe "Countries page" do
 
   end
 
-  describe "when countries exist and user is signed in" do
+  describe "when country exist and user is signed in" do
 
     let!(:country){FactoryGirl.create(:country)}
     let!(:user){FactoryGirl.create(:user)}
