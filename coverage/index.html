@@ -14,27 +14,27 @@
       <img src="./assets/0.8.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2014-04-05T20:31:17+03:00">2014-04-05T20:31:17+03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2014-04-06T16:42:47+03:00">2014-04-06T16:42:47+03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">83.59%</span></span>
+    (<span class="covered_percent"><span class="yellow">86.45%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.35
+         1.65
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>53</b> files in total.
-    <b>774</b> relevant lines. 
-    <span class="green"><b>647</b> lines covered</span> and
-    <span class="red"><b>127</b> lines missed </span>
+    <b>54</b> files in total.
+    <b>819</b> relevant lines. 
+    <span class="green"><b>708</b> lines covered</span> and
+    <span class="red"><b>111</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -57,7 +57,7 @@
         <td>8</td>
         <td>8</td>
         <td>0</td>
-        <td>36.5</td>
+        <td>58.3</td>
       </tr>
       
       <tr>
@@ -72,12 +72,12 @@
       
       <tr>
         <td class="strong"><a href="#9735e6bbc58c632bf6b368be92680ca539959cf7" class="src_link" title="app/controllers/countries_controller.rb">app/controllers/countries_controller.rb</a></td>
-        <td class="red strong">41.18 %</td>
+        <td class="yellow strong">88.24 %</td>
         <td>75</td>
         <td>34</td>
-        <td>14</td>
-        <td>20</td>
-        <td>0.4</td>
+        <td>30</td>
+        <td>4</td>
+        <td>1.4</td>
       </tr>
       
       <tr>
@@ -87,7 +87,7 @@
         <td>11</td>
         <td>11</td>
         <td>0</td>
-        <td>3.2</td>
+        <td>4.3</td>
       </tr>
       
       <tr>
@@ -127,7 +127,7 @@
         <td>56</td>
         <td>20</td>
         <td>36</td>
-        <td>0.4</td>
+        <td>0.5</td>
       </tr>
       
       <tr>
@@ -403,9 +403,19 @@
       <tr>
         <td class="strong"><a href="#f43115b4a09b1837419461333bf64a3dbe256b78" class="src_link" title="spec/features/countries_page_spec.rb">spec/features/countries_page_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>47</td>
-        <td>16</td>
-        <td>16</td>
+        <td>124</td>
+        <td>50</td>
+        <td>50</td>
+        <td>0</td>
+        <td>1.5</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#bc0607d586f61792792d9de3be0df98e7b41a57f" class="src_link" title="spec/features/countries_show_page_spec.rb">spec/features/countries_show_page_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>33</td>
+        <td>11</td>
+        <td>11</td>
         <td>0</td>
         <td>1.3</td>
       </tr>
@@ -577,7 +587,7 @@
         <td>6</td>
         <td>6</td>
         <td>0</td>
-        <td>3.0</td>
+        <td>5.0</td>
       </tr>
       
     </tbody>
@@ -670,8 +680,8 @@
           <code class="ruby">  def current_user</code>
         </li>
       
-        <li class="covered" data-hits="195" data-linenumber="11">
-          <span class="hits">195</span>
+        <li class="covered" data-hits="295" data-linenumber="11">
+          <span class="hits">295</span>
           
           <code class="ruby">    return nil if session[:user_id].nil?</code>
         </li>
@@ -682,8 +692,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="85" data-linenumber="13">
-          <span class="hits">85</span>
+        <li class="covered" data-hits="152" data-linenumber="13">
+          <span class="hits">152</span>
           
           <code class="ruby">    User.find(session[:user_id])</code>
         </li>
@@ -724,8 +734,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="20">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="14" data-linenumber="20">
+          <span class="hits">14</span>
           
           <code class="ruby">    redirect_to signin_path, notice: &quot;You should be signed in&quot;  if current_user.nil?</code>
         </li>
@@ -1229,11 +1239,11 @@
         <div class="source_table" id="9735e6bbc58c632bf6b368be92680ca539959cf7">
   <div class="header">
     <h3>app/controllers/countries_controller.rb</h3>
-    <h4><span class="red">41.18 %</span> covered</h4>
+    <h4><span class="yellow">88.24 %</span> covered</h4>
     <div>
       <b>34</b> relevant lines. 
-      <span class="green"><b>14</b> lines covered</span> and
-      <span class="red"><b>20</b> lines missed.</span>
+      <span class="green"><b>30</b> lines covered</span> and
+      <span class="red"><b>4</b> lines missed.</span>
     </div>
   </div>
   
@@ -1282,8 +1292,8 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="8">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="6" data-linenumber="8">
+          <span class="hits">6</span>
           
           <code class="ruby">    @countries = Country.all</code>
         </li>
@@ -1342,8 +1352,8 @@
           <code class="ruby">  def new</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="18">
-          
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
           
           <code class="ruby">    @country = Country.new</code>
         </li>
@@ -1402,8 +1412,8 @@
           <code class="ruby">  def create</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="28">
-          
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
           
           <code class="ruby">    @country = Country.new(country_params)</code>
         </li>
@@ -1414,26 +1424,26 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="30">
-          
+        <li class="covered" data-hits="1" data-linenumber="30">
+          <span class="hits">1</span>
           
           <code class="ruby">    respond_to do |format|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="31">
-          
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
           
           <code class="ruby">      if @country.save</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="32">
-          
+        <li class="covered" data-hits="2" data-linenumber="32">
+          <span class="hits">2</span>
           
           <code class="ruby">        format.html { redirect_to @country, notice: &#39;Country was successfully created.&#39; }</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="33">
-          
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
           
           <code class="ruby">        format.json { render action: &#39;show&#39;, status: :created, location: @country }</code>
         </li>
@@ -1498,26 +1508,26 @@
           <code class="ruby">  def update</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="44">
-          
+        <li class="covered" data-hits="1" data-linenumber="44">
+          <span class="hits">1</span>
           
           <code class="ruby">    respond_to do |format|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="45">
-          
+        <li class="covered" data-hits="1" data-linenumber="45">
+          <span class="hits">1</span>
           
           <code class="ruby">      if @country.update(country_params)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="46">
-          
+        <li class="covered" data-hits="2" data-linenumber="46">
+          <span class="hits">2</span>
           
           <code class="ruby">        format.html { redirect_to @country, notice: &#39;Country was successfully updated.&#39; }</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="47">
-          
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
           
           <code class="ruby">        format.json { head :no_content }</code>
         </li>
@@ -1582,26 +1592,26 @@
           <code class="ruby">  def destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="58">
-          
+        <li class="covered" data-hits="1" data-linenumber="58">
+          <span class="hits">1</span>
           
           <code class="ruby">    @country.destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="59">
-          
+        <li class="covered" data-hits="1" data-linenumber="59">
+          <span class="hits">1</span>
           
           <code class="ruby">    respond_to do |format|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="60">
-          
+        <li class="covered" data-hits="2" data-linenumber="60">
+          <span class="hits">2</span>
           
           <code class="ruby">      format.html { redirect_to countries_url }</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="61">
-          
+        <li class="covered" data-hits="1" data-linenumber="61">
+          <span class="hits">1</span>
           
           <code class="ruby">      format.json { head :no_content }</code>
         </li>
@@ -1642,8 +1652,8 @@
           <code class="ruby">    def set_country</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="68">
-          
+        <li class="covered" data-hits="8" data-linenumber="68">
+          <span class="hits">8</span>
           
           <code class="ruby">      @country = Country.find(params[:id])</code>
         </li>
@@ -1672,8 +1682,8 @@
           <code class="ruby">    def country_params</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="73">
-          
+        <li class="covered" data-hits="2" data-linenumber="73">
+          <span class="hits">2</span>
           
           <code class="ruby">      params.require(:country).permit(:name)</code>
         </li>
@@ -1762,8 +1772,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="10">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="11" data-linenumber="10">
+          <span class="hits">11</span>
           
           <code class="ruby">    user = User.find_by name: params[:name]</code>
         </li>
@@ -1774,8 +1784,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="12">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="11" data-linenumber="12">
+          <span class="hits">11</span>
           
           <code class="ruby">    if user &amp;&amp; user.authenticate(params[:password])</code>
         </li>
@@ -1786,14 +1796,14 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="14">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="8" data-linenumber="14">
+          <span class="hits">8</span>
           
           <code class="ruby">      session[:user_id] = user.id</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="15">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="8" data-linenumber="15">
+          <span class="hits">8</span>
           
           <code class="ruby">      redirect_to user,  notice: &quot;Login successful!&quot;</code>
         </li>
@@ -4138,8 +4148,8 @@
           <code class="ruby">    def set_user</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="110">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="8" data-linenumber="110">
+          <span class="hits">8</span>
           
           <code class="ruby">      @user = User.find(params[:id])</code>
         </li>
@@ -7069,8 +7079,8 @@
     <h3>spec/features/countries_page_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>16</b> relevant lines. 
-      <span class="green"><b>16</b> lines covered</span> and
+      <b>50</b> relevant lines. 
+      <span class="green"><b>50</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -7174,52 +7184,52 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="17">
+        <li class="covered" data-hits="4" data-linenumber="17">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    let!(:country){FactoryGirl.create(:country)}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
           <span class="hits">1</span>
           
           <code class="ruby">    before :each do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="18">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="3" data-linenumber="20">
+          <span class="hits">3</span>
           
-          <code class="ruby">      @countries = [&quot;Germany&quot;, &quot;I-B&quot;, &quot;France&quot;]</code>
+          <code class="ruby">      @countries = [&quot;U.S.S.R&quot;, &quot;I-B&quot;, &quot;France&quot;]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="never" data-hits="" data-linenumber="21">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="20">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="3" data-linenumber="22">
+          <span class="hits">3</span>
           
           <code class="ruby">      @countries.each do |country|</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="21">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="9" data-linenumber="23">
+          <span class="hits">9</span>
           
           <code class="ruby">        FactoryGirl.create(:country, name:country)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="never" data-hits="" data-linenumber="24">
           
           
           <code class="ruby">      end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="23">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="24">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      visit countries_path</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
@@ -7228,10 +7238,10 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="26">
+        <li class="covered" data-hits="3" data-linenumber="26">
+          <span class="hits">3</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">      visit countries_path</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="27">
@@ -7243,13 +7253,13 @@
         <li class="never" data-hits="" data-linenumber="28">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="29">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="29">
           
-          <code class="ruby">    it &quot;lists the countries and their total number&quot; do</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="30">
@@ -7261,7 +7271,7 @@
         <li class="covered" data-hits="1" data-linenumber="31">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(page).to have_content &quot;Number of countries: #{@countries.count}&quot;</code>
+          <code class="ruby">    it &quot;lists the countries and their total number&quot; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="32">
@@ -7273,7 +7283,7 @@
         <li class="covered" data-hits="1" data-linenumber="33">
           <span class="hits">1</span>
           
-          <code class="ruby">      @countries.each do |country|</code>
+          <code class="ruby">      expect(page).to have_content &quot;Number of countries: 4&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="34">
@@ -7282,10 +7292,10 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="35">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
           
-          <code class="ruby">        expect(page).to have_content country</code>
+          <code class="ruby">      @countries.each do |country|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="36">
@@ -7294,10 +7304,10 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="37">
+        <li class="covered" data-hits="3" data-linenumber="37">
+          <span class="hits">3</span>
           
-          
-          <code class="ruby">      end</code>
+          <code class="ruby">        expect(page).to have_content country</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="38">
@@ -7315,13 +7325,13 @@
         <li class="never" data-hits="" data-linenumber="40">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">      end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="41">
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">      expect(page).to have_content &quot;Germany&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="42">
@@ -7333,28 +7343,706 @@
         <li class="never" data-hits="" data-linenumber="43">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="44">
           
           
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="45">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="46">
+        <li class="covered" data-hits="1" data-linenumber="45">
+          <span class="hits">1</span>
           
+          <code class="ruby">    it &quot;if user is not signed in it should not be able to visit new country page and will be redirected correctly&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="46">
+          <span class="hits">1</span>
           
-          <code class="ruby"></code>
+          <code class="ruby">      visit new_country_path(country)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(current_path).to eq(signin_path)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="51">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(page).to have_content &#39;You should be signed in&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &quot;user should not be able to visit edit country page and will be redirected correctly&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="56">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      visit edit_country_path(country)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="58">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(current_path).to eq(signin_path)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="59">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="60">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="61">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(page).to have_content &#39;You should be signed in&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="62">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="64">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="65">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="66">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="67">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &quot;when countries exist and user is signed in&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="68">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="69">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    let!(:country){FactoryGirl.create(:country)}</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="70">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    let!(:user){FactoryGirl.create(:user)}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="71">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="72">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    before :each do</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="73">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      sign_in(name:&quot;Testi&quot;, password:&quot;Test1&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="74">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="75">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="76">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="77">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &quot;user should be able to visit edit country page and edit country correctly&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="78">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="79">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      visit edit_country_path(country)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="80">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="81">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(current_path).to eq(edit_country_path(country))</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="82">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      fill_in(&#39;country_name&#39;, with: &quot;Muutos&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="83">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="84">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      click_button(&#39;Update Country&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="85">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="86">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(current_path).to eq(country_path(country))</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="87">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="88">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(page).to have_content &#39;Country was successfully updated.&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="89">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(page).to have_content &#39;Muutos&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="90">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="91">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="92">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="93">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &quot;user should be able to create country&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="94">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="95">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      visit new_country_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="96">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="97">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      fill_in(&#39;country_name&#39;, with: &quot;UUSI&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="98">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="99">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      click_button(&#39;Create Country&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="100">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="101">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(page).to have_content &#39;Country was successfully created.&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="102">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(page).to have_content &#39;UUSI&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="103">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="104">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="105">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="106">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &quot;user should be able to delete country&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="107">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="108">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      visit countries_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="109">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="110">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="111">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      click_link(&#39;Destroy&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="112">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="113">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(current_path).to eq(countries_path)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="114">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="115">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(page).not_to have_content &#39;Germany&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="116">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="117">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="118">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="119">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="120">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="121">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="122">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="123">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="124">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="bc0607d586f61792792d9de3be0df98e7b41a57f">
+  <div class="header">
+    <h3>spec/features/countries_show_page_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>11</b> relevant lines. 
+      <span class="green"><b>11</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;spec_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &quot;Country show page&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="4">
+          <span class="hits">3</span>
+          
+          <code class="ruby">  let!(:country){FactoryGirl.create(:country)}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;should not have any members or tanks after creation&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit country_path(country)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content &#39;Germany&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &quot;when user not signed in&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="17">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    let!(:user){FactoryGirl.create(:user)}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &quot;should not have any links to edit country &quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      visit country_path(country)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(page).not_to have_content &#39;Edit&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
           
           
           <code class="ruby">end</code>
@@ -12712,26 +13400,26 @@
           <code class="ruby">  def sign_in(credentials)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="4">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="7" data-linenumber="4">
+          <span class="hits">7</span>
           
           <code class="ruby">    visit signin_path</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="5">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="7" data-linenumber="5">
+          <span class="hits">7</span>
           
           <code class="ruby">    fill_in(&#39;name&#39;, with:credentials[:name])</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="6">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="7" data-linenumber="6">
+          <span class="hits">7</span>
           
           <code class="ruby">    fill_in(&#39;password&#39;, with:credentials[:password])</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="7">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="7" data-linenumber="7">
+          <span class="hits">7</span>
           
           <code class="ruby">    click_button(&#39;Log in&#39;)</code>
         </li>

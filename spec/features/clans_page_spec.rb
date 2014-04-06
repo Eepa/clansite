@@ -40,7 +40,7 @@ describe "Clans page" do
         expect(page).to have_content clan
 
       end
-
+      expect(page).to have_content "TestiK"
 
     end
 
