@@ -43,7 +43,7 @@ describe "Countries page" do
     end
 
     it "if user is not signed in it should not be able to visit new country page and will be redirected correctly" do
-      visit new_country_path(country)
+      visit new_country_path
 
       expect(current_path).to eq(signin_path)
 

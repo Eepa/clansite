@@ -44,7 +44,7 @@ describe "Styles page" do
     end
 
     it "if user is not signed in it should not be able to visit new style page and will be redirected correctly" do
-      visit new_style_path(style)
+      visit new_style_path
 
       expect(current_path).to eq(signin_path)
 

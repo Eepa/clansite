@@ -45,7 +45,7 @@ describe "Clans page" do
     end
 
     it "if user is not signed in it should not be able to visit new clan page and will be redirected correctly" do
-      visit new_clan_path(clan)
+      visit new_clan_path
 
       expect(current_path).to eq(signin_path)
 
