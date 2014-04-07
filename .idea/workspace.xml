@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7438230-967f-4231-85c9-fa8e5fff6507" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/features/users_show_page_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coverage/.last_run.json" afterPath="$PROJECT_DIR$/coverage/.last_run.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coverage/.resultset.json" afterPath="$PROJECT_DIR$/coverage/.resultset.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coverage/index.html" afterPath="$PROJECT_DIR$/coverage/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/features/users_page_spec.rb" afterPath="$PROJECT_DIR$/spec/features/users_page_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="clansite.iws" />
@@ -41,7 +41,7 @@
       <file leaf-file-name="user_tanks_page_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/features/user_tanks_page_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="141" column="0" selection-start="3581" selection-end="3581" vertical-scroll-proportion="0.0" vertical-offset="1606" max-vertical-offset="2580">
+            <state line="141" column="0" selection-start="3581" selection-end="3581" vertical-scroll-proportion="0.0" vertical-offset="2115" max-vertical-offset="2580">
               <folding />
             </state>
           </provider>
@@ -50,7 +50,7 @@
       <file leaf-file-name="clans_show_page_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/features/clans_show_page_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="0" selection-end="1289" vertical-scroll-proportion="0.0" vertical-offset="10" max-vertical-offset="870">
+            <state line="15" column="0" selection-start="0" selection-end="1289" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="870">
               <folding />
             </state>
           </provider>
@@ -77,7 +77,7 @@
       <file leaf-file-name="countries_page_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/features/countries_page_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="6" selection-start="1514" selection-end="1553" vertical-scroll-proportion="0.0" vertical-offset="772" max-vertical-offset="1935">
+            <state line="105" column="2" selection-start="2308" selection-end="2522" vertical-scroll-proportion="0.0" vertical-offset="1351" max-vertical-offset="1935">
               <folding />
             </state>
           </provider>
@@ -86,25 +86,25 @@
       <file leaf-file-name="tank_page_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/features/tank_page_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="6" selection-start="2123" selection-end="2158" vertical-scroll-proportion="0.0" vertical-offset="1068" max-vertical-offset="2265">
+            <state line="113" column="6" selection-start="2708" selection-end="2749" vertical-scroll-proportion="0.0" vertical-offset="1410" max-vertical-offset="2265">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_page_spec.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="users_page_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/features/users_page_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="0" selection-start="2163" selection-end="2163" vertical-scroll-proportion="0.0" vertical-offset="1359" max-vertical-offset="1980">
+            <state line="221" column="34" selection-start="4564" selection-end="4564" vertical-scroll-proportion="0.5890411" vertical-offset="2971" max-vertical-offset="3555">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_show_page_spec.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="users_show_page_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/features/users_show_page_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.5728643" vertical-offset="363" max-vertical-offset="960">
+            <state line="44" column="0" selection-start="1196" selection-end="1196" vertical-scroll-proportion="0.0" vertical-offset="339" max-vertical-offset="960">
               <folding />
             </state>
           </provider>
@@ -113,7 +113,7 @@
       <file leaf-file-name="user_tank_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/models/user_tank_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="0" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="915">
+            <state line="48" column="0" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="915">
               <folding />
             </state>
           </provider>
@@ -172,7 +172,6 @@
         <option value="$PROJECT_DIR$/spec/features/clans_show_page_spec.rb" />
         <option value="$PROJECT_DIR$/spec/features/clans_other_page_spec.rb" />
         <option value="$PROJECT_DIR$/spec/support/helpers/own_test_helper.rb" />
-        <option value="$PROJECT_DIR$/spec/features/users_page_spec.rb" />
         <option value="$PROJECT_DIR$/spec/features/countries_show_page_spec.rb" />
         <option value="$PROJECT_DIR$/spec/features/styles_show_page_spec.rb" />
         <option value="$PROJECT_DIR$/spec/factories.rb" />
@@ -183,6 +182,7 @@
         <option value="$PROJECT_DIR$/spec/features/tank_page_spec.rb" />
         <option value="$PROJECT_DIR$/spec/features/user_tanks_page_spec.rb" />
         <option value="$PROJECT_DIR$/spec/features/users_show_page_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/features/users_page_spec.rb" />
       </list>
     </option>
   </component>
@@ -237,6 +237,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -326,11 +327,10 @@
         </subPane>
       </pane>
       <pane id="RailsProjectView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/wadror/ratebeer" />
+    <property name="last_opened_file_path" value="$USER_HOME$/ohtuviikot/minipro/orphan_commit" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
@@ -502,26 +502,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="959" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27528676" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39971346" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39971346" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -735,30 +735,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/support/helpers/own_test_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="36" selection-start="152" selection-end="152" vertical-scroll-proportion="0.12077295" vertical-offset="0" max-vertical-offset="621">
-          <folding />
-        </state>
+        <state line="5" column="36" selection-start="152" selection-end="152" vertical-scroll-proportion="0.12077295" vertical-offset="0" max-vertical-offset="621" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/styles_show_page_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="574" selection-end="574" vertical-scroll-proportion="0.79899496" vertical-offset="48" max-vertical-offset="645">
-          <folding />
-        </state>
+        <state line="35" column="0" selection-start="574" selection-end="574" vertical-scroll-proportion="0.79899496" vertical-offset="48" max-vertical-offset="645" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/countries_show_page_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="44" selection-start="380" selection-end="380" vertical-scroll-proportion="0.4347826" vertical-offset="0" max-vertical-offset="621">
-          <folding />
-        </state>
+        <state line="18" column="44" selection-start="380" selection-end="380" vertical-scroll-proportion="0.4347826" vertical-offset="0" max-vertical-offset="621" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/tanks_show_page_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="900" selection-end="900" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="825">
-          <folding />
-        </state>
+        <state line="44" column="0" selection-start="900" selection-end="900" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="825" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/clans_page_spec.rb">
@@ -775,23 +767,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/tank_page_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="6" selection-start="2123" selection-end="2158" vertical-scroll-proportion="0.0" vertical-offset="1068" max-vertical-offset="2265">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/user_tanks_page_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="141" column="0" selection-start="3581" selection-end="3581" vertical-scroll-proportion="0.0" vertical-offset="1606" max-vertical-offset="2580">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/users_page_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="0" selection-start="2163" selection-end="2163" vertical-scroll-proportion="0.0" vertical-offset="1359" max-vertical-offset="1980">
           <folding />
         </state>
       </provider>
@@ -810,16 +788,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/countries_page_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/features/users_show_page_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="6" selection-start="1514" selection-end="1553" vertical-scroll-proportion="0.0" vertical-offset="772" max-vertical-offset="1935">
+        <state line="44" column="0" selection-start="1196" selection-end="1196" vertical-scroll-proportion="0.0" vertical-offset="339" max-vertical-offset="960">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/users_show_page_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/features/tank_page_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.5728643" vertical-offset="363" max-vertical-offset="960">
+        <state line="113" column="6" selection-start="2708" selection-end="2749" vertical-scroll-proportion="0.0" vertical-offset="1410" max-vertical-offset="2265">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/features/countries_page_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="2" selection-start="2308" selection-end="2522" vertical-scroll-proportion="0.0" vertical-offset="1351" max-vertical-offset="1935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/features/users_page_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="221" column="34" selection-start="4564" selection-end="4564" vertical-scroll-proportion="0.5890411" vertical-offset="2971" max-vertical-offset="3555">
           <folding />
         </state>
       </provider>
