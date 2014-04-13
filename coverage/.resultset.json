@@ -187,6 +187,7 @@
         1,
         1,
         1,
+        1,
         null,
         null,
         null,
@@ -1852,6 +1853,7 @@
         1,
         1,
         1,
+        1,
         null,
         null,
         null,
@@ -1936,16 +1938,24 @@
         null,
         null,
         1,
-        832,
+        904,
         null,
-        538,
+        610,
         null,
         null,
         null,
         null,
         1,
         null,
+        36,
+        null,
+        null,
+        null,
+        1,
         47,
+        11,
+        36,
+        0,
         null,
         null,
         null,
@@ -1989,6 +1999,7 @@
         null
       ],
       "/home/wadror/wadpro/clansite/app/controllers/countries_controller.rb": [
+        1,
         1,
         1,
         1,
@@ -2106,6 +2117,7 @@
         1,
         1,
         1,
+        1,
         null,
         null,
         null,
@@ -2217,6 +2229,7 @@
         null
       ],
       "/home/wadror/wadpro/clansite/app/controllers/tanks_controller.rb": [
+        1,
         1,
         1,
         1,
@@ -2339,6 +2352,7 @@
         null
       ],
       "/home/wadror/wadpro/clansite/app/controllers/user_tanks_controller.rb": [
+        1,
         1,
         1,
         1,
@@ -2466,6 +2480,7 @@
         null
       ],
       "/home/wadror/wadpro/clansite/app/controllers/users_controller.rb": [
+        1,
         1,
         1,
         1,
@@ -2631,6 +2646,6 @@
         null
       ]
     },
-    "timestamp": 1396896285
+    "timestamp": 1397414276
   }
 }

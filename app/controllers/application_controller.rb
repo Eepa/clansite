@@ -21,4 +21,12 @@ class ApplicationController < ActionController::Base
 
   end
 
+  def ensure_that_admin_user
+    if current_user.nil?
+      redirect_to signin_path, notice: "You should be signed in"
+    elsif current_user.admin? == false
+      redirect_to signin_path, notice:'You should be signed in as admin'
+    end
+  end
+
 end

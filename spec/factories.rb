@@ -31,6 +31,7 @@ FactoryGirl.define do
     name "Testi"
     password "Test1"
     password_confirmation "Test1"
+    admin true
     clan
 
 
