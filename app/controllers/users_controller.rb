@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy, :leave_clan]
+  before_action :set_user, only: [:show, :edit, :update, :destroy, :leave_clan, :join_clan, :update_clan_id]
   before_action :ensure_that_admin_user, except: [:index, :show, :new, :create, :join_clan, :leave_clan, :update_clan_id]
   before_action :ensure_that_signed_in, except: [:index, :show, :new, :create]
 
@@ -62,7 +62,7 @@ class UsersController < ApplicationController
 
       respond_to do |format|
         if @user.update(:clan_id => update_clan_params[:clan_id])
-          format.html { redirect_to @user, notice: "User's clan updated!" }
+          format.html { redirect_to @user, notice: "You have successfully joined in a clan!" }
           format.json { head :no_content }
         else
           format.html { render action: 'join_clan' }
@@ -94,7 +94,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
 
-      if current_user == @user and @user.update(:clan_id => nil)
+      if (current_user == @user and @user.update(:clan_id => nil)) or (current_user.admin and @user.update(:clan_id => nil))
         format.html { redirect_to user_url(@user), notice: "You have successfully left the clan!" }
         format.json { head :no_content }
       else

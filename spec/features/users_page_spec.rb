@@ -198,13 +198,13 @@ describe "Users page" do
       click_link('Leave clan')
       click_link('Join clan')
 
-      expect(current_path).to eq(join_clan_path)
+      expect(current_path).to eq(user_join_clan_path(user))
 
       select('PARAS', from:'user[clan_id]')
 
       click_button('Join clan')
 
-      expect(page).to have_content "User's clan updated!"
+      expect(page).to have_content "You have successfully joined in a clan!"
       expect(page).to have_content "Clan: PARAS"
 
     end

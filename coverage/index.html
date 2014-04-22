@@ -14,7 +14,7 @@
       <img src="./assets/0.8.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2014-04-22T19:36:30+03:00">2014-04-22T19:36:30+03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2014-04-22T20:40:00+03:00">2014-04-22T20:40:00+03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,7 +25,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.65
+         2.66
        </span>
     </span> hits/line)
   </h2>
@@ -127,7 +127,7 @@
         <td>57</td>
         <td>49</td>
         <td>8</td>
-        <td>1.9</td>
+        <td>2.0</td>
       </tr>
       
       <tr>
@@ -3725,7 +3725,7 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  before_action :set_user, only: [:show, :edit, :update, :destroy, :leave_clan]</code>
+          <code class="ruby">  before_action :set_user, only: [:show, :edit, :update, :destroy, :leave_clan, :join_clan, :update_clan_id]</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="3">
@@ -4103,7 +4103,7 @@
         <li class="covered" data-hits="2" data-linenumber="65">
           <span class="hits">2</span>
           
-          <code class="ruby">          format.html { redirect_to @user, notice: &quot;User&#39;s clan updated!&quot; }</code>
+          <code class="ruby">          format.html { redirect_to @user, notice: &quot;You have successfully joined in a clan!&quot; }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="66">
@@ -4295,7 +4295,7 @@
         <li class="covered" data-hits="3" data-linenumber="97">
           <span class="hits">3</span>
           
-          <code class="ruby">      if current_user == @user and @user.update(:clan_id =&gt; nil)</code>
+          <code class="ruby">      if (current_user == @user and @user.update(:clan_id =&gt; nil)) or (current_user.admin and @user.update(:clan_id =&gt; nil))</code>
         </li>
       
         <li class="covered" data-hits="6" data-linenumber="98">
@@ -4376,8 +4376,8 @@
           <code class="ruby">    def set_user</code>
         </li>
       
-        <li class="covered" data-hits="42" data-linenumber="111">
-          <span class="hits">42</span>
+        <li class="covered" data-hits="44" data-linenumber="111">
+          <span class="hits">44</span>
           
           <code class="ruby">      @user = User.find(params[:id])</code>
         </li>
@@ -6263,7 +6263,7 @@
         <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
-          <code class="ruby">  get &#39;join_clan&#39;, to: &#39;users#join_clan&#39;</code>
+          <code class="ruby">  get &#39;join_clan/:id&#39;, to: &#39;users#join_clan&#39;, as: &#39;user_join_clan&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="22">
@@ -6275,7 +6275,7 @@
         <li class="covered" data-hits="1" data-linenumber="23">
           <span class="hits">1</span>
           
-          <code class="ruby">  put &#39;join_clan&#39;, to: &#39;users#update_clan_id&#39;</code>
+          <code class="ruby">  put &#39;join_clan/:id&#39;, to: &#39;users#update_clan_id&#39;, as: &#39;user_update_clan_id&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
@@ -12785,7 +12785,7 @@
         <li class="covered" data-hits="1" data-linenumber="201">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(current_path).to eq(join_clan_path)</code>
+          <code class="ruby">      expect(current_path).to eq(user_join_clan_path(user))</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="202">
@@ -12821,7 +12821,7 @@
         <li class="covered" data-hits="1" data-linenumber="207">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(page).to have_content &quot;User&#39;s clan updated!&quot;</code>
+          <code class="ruby">      expect(page).to have_content &quot;You have successfully joined in a clan!&quot;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="208">
