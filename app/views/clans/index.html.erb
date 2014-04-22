@@ -1,6 +1,6 @@
 <h1>Listing clans</h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
       <th>Name</th>
@@ -17,7 +17,7 @@
         <td><%= link_to clan.name, clan %></td>
         <td><%= clan.description %></td>
 
-        <% if current_user %>
+        <% unless current_user.nil? or !current_user.admin %>
 
             <td><%= link_to 'Edit', edit_clan_path(clan) %></td>
             <td><%= link_to 'Destroy', clan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -37,4 +37,4 @@
 
 
 
-<%= link_to 'New Clan', new_clan_path  if current_user%>
+<%= link_to 'New Clan', new_clan_path  unless current_user.nil? or !current_user.admin %>

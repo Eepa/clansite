@@ -1,6 +1,6 @@
 <h1>Listing styles</h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
       <th>Name</th>
@@ -17,7 +17,7 @@
         <td><%= link_to style.name, style %></td>
         <td><%= style.description %></td>
 
-        <% if current_user %>
+        <% unless current_user.nil? or !current_user.admin %>
 
             <td><%= link_to 'Edit', edit_style_path(style) %></td>
             <td><%= link_to 'Destroy', style, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -34,4 +34,4 @@
 
 <br>
 
-<%= link_to 'New Style', new_style_path if current_user %>
+<%= link_to 'New Style', new_style_path unless current_user.nil? or !current_user.admin %>

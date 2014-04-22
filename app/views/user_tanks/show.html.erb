@@ -15,4 +15,4 @@
   <%= @user_tank.rating %>
 </p>
 
-<%= link_to 'Edit', edit_user_tank_path(@user_tank) if current_user %>
+<%= link_to 'Edit', edit_user_tank_path(@user_tank) unless current_user.nil? or !current_user.admin %>

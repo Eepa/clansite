@@ -27,4 +27,4 @@
 
 <%= render 'user_table' %>
 
-<%= link_to 'Edit', edit_tank_path(@tank) if current_user%>
+<%= link_to 'Edit', edit_tank_path(@tank) unless current_user.nil? or !current_user.admin %>

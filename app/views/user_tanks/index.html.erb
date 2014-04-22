@@ -1,6 +1,6 @@
 <h1>Listing users and their tanks</h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
       <th>User</th>
@@ -20,10 +20,11 @@
         <td><%= user_tank.rating %></td>
         <td><%= link_to 'Show', user_tank %></td>
 
-        <% if current_user %>
-            <td><%= link_to 'Edit', edit_user_tank_path(user_tank) %></td>
-            <td><%= link_to 'Destroy', user_tank, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-
+        <% unless current_user.nil?  %>
+            <% if current_user == user_tank.user or current_user.admin %>
+                <td><%= link_to 'Edit', edit_user_tank_path(user_tank) %></td>
+                <td><%= link_to 'Destroy', user_tank, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <% end %>
         <% end %>
 
       </tr>

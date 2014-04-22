@@ -1,6 +1,6 @@
 class UserTanksController < ApplicationController
   before_action :set_user_tank, only: [:show, :edit, :update, :destroy]
-  before_action :ensure_that_admin_user, except: [:index, :show]
+
   before_action :ensure_that_signed_in, except: [:index, :show]
 
   # GET /user_tanks
@@ -56,12 +56,19 @@ class UserTanksController < ApplicationController
   # PATCH/PUT /user_tanks/1.json
   def update
     respond_to do |format|
-      if @user_tank.update(user_tank_params)
-        format.html { redirect_to @user_tank, notice: 'User tank was successfully updated.' }
-        format.json { head :no_content }
+      if @user_tank.user == current_user or current_user.admin
+
+         if @user_tank.update(user_tank_params)
+            format.html { redirect_to @user_tank, notice: 'User tank was successfully updated.' }
+            format.json { head :no_content }
+         else
+            format.html { render action: 'edit' }
+            format.json { render json: @user_tank.errors, status: :unprocessable_entity }
+         end
+
       else
-        format.html { render action: 'edit' }
-        format.json { render json: @user_tank.errors, status: :unprocessable_entity }
+        format.html { redirect_to @user_tank, notice:'You cannot update this tank'}
+
       end
     end
   end
@@ -69,11 +76,23 @@ class UserTanksController < ApplicationController
   # DELETE /user_tanks/1
   # DELETE /user_tanks/1.json
   def destroy
-    @user_tank.destroy
-    respond_to do |format|
-      format.html { redirect_to user_tanks_url }
-      format.json { head :no_content }
+    if @user_tank.user == current_user or current_user.admin
+
+      @user_tank.destroy
+
+      respond_to do |format|
+        format.html { redirect_to user_tanks_url }
+        format.json { head :no_content }
+      end
+
+    else
+
+      respond_to do |format|
+        format.html { redirect_to @user_tank, notice:'You cannot delete this tank'}
+
+      end
     end
+
   end
 
   private

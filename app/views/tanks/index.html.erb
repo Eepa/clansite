@@ -1,6 +1,6 @@
 <h1>Listing tanks</h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
       <th>Name</th>
@@ -22,7 +22,7 @@
         <td><%= tank.tier_number %></td>
         <td><%= link_to tank.style.name, style_path(tank.style) %></td>
 
-        <% if current_user %>
+        <% unless current_user.nil? or !current_user.admin %>
             <td><%= link_to 'Edit', edit_tank_path(tank) %></td>
             <td><%= link_to 'Destroy', tank, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 
@@ -39,4 +39,4 @@
 
 <br>
 
-<%= link_to 'New Tank', new_tank_path if current_user %>
+<%= link_to 'New Tank', new_tank_path unless current_user.nil? or !current_user.admin %>
