@@ -1,48 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Clansite</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Clansite" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Clansite" %>">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <header>
+      <%= render 'layouts/navigation' %>
+    </header>
+    <main role="main" class=".container-fluid">
 
-    <div class="navibar">
-      <%= link_to 'clans', clans_path %>
-      <%= link_to 'tanks', tanks_path %>
-      <%= link_to 'styles', styles_path %>
-      <%= link_to 'countries', countries_path %>
-      <%= link_to 'users', users_path %>
-      <%= link_to 'tanks of users', user_tanks_path %>
+       <%= render 'layouts/messages' %>
 
-      |
+      <div class="row">
+        <div class="col-md-10">
+          <%= yield %>
+        </div>
+      </div>
 
+      <div class="row">
 
-      <% if current_user.nil? %>
+        <div class="col-md-6">
+          <img src="http://clans.worldoftanks.eu/media/clans/emblems/cl_218/500000218/emblem_64x64.png" width="100">
 
-          <%= link_to 'signup', signup_path  %>
-          <%= link_to 'signin', signin_path  %>
+        </div>
 
-      <% else %>
+        <div class="col-md-6">
 
-          <%= link_to current_user.name, current_user %>
+          <img src="http://clans.worldoftanks.eu/media/clans/emblems/cl_360/500007360/emblem_64x64.png" width="100">
+        </div>
+      </div>
 
-          <%= link_to 'signout', signout_path, method: :delete %>
-
-      <% end %>
-
-
-
-    </div>
-
-    <% if not current_user.nil? %>
-
-        <p> <%= current_user.name %> signed up</p>
-
-    <% end %>
-
-<%= yield %>
-
-</body>
+    </main>
+  </body>
 </html>

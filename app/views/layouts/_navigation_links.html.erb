@@ -1,0 +1,22 @@
+<li><%= link_to 'clans', clans_path %></li>
+<li><%= link_to 'tanks', tanks_path %></li>
+<li><%= link_to 'styles', styles_path %></li>
+<li><%= link_to 'countries', countries_path %></li>
+<li><%= link_to 'users', users_path %></li>
+<li><%= link_to 'tanks of users', user_tanks_path %></li>
+
+|
+
+
+<% if current_user.nil? %>
+
+   <li><%= link_to 'signup', signup_path  %></li>
+   <li><%= link_to 'signin', signin_path  %></li>
+
+<% else %>
+
+   <li><%= link_to current_user.name, current_user %></li>
+
+   <li><%= link_to 'signout', signout_path, method: :delete %></li>
+
+<% end %>

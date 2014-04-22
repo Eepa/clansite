@@ -25,6 +25,12 @@ group :test do
   gem 'launchy'
 end
 
+gem 'bootstrap-sass'
+
+group :development do
+	gem 'rails_layout'
+end
+
 gem 'bcrypt-ruby', '~> 3.1.2'
 
 gem 'simplecov', require: false
