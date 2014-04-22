@@ -9,11 +9,11 @@
   <% if @user.clan_id.nil? %>
 
     <p>Not a member of any clan!</p>
-    <%= link_to 'Join clan', user_join_clan_path if current_user and @user == current_user%>
+    <%= link_to 'Join clan', user_join_clan_path unless current_user.nil? or !current_user.admin %>
 
 <% else %>
    <p> <%= link_to @user.clan.name, clan_path(@user.clan) %> </p>
-    <%= link_to 'Leave clan', user_leave_clan_path, method: :put, data: {confirm: "Are you sure?"} if current_user and @user == current_user%>
+    <%= link_to 'Leave clan', user_leave_clan_path, method: :put, data: {confirm: "Are you sure?"} unless current_user.nil? or !current_user.admin %>
 <% end %>
 </p>
 

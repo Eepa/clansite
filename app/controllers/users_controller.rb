@@ -58,7 +58,7 @@ class UsersController < ApplicationController
   def update_clan_id
 
 
-      @user = current_user
+
 
       respond_to do |format|
         if @user.update(:clan_id => update_clan_params[:clan_id])
@@ -87,7 +87,7 @@ class UsersController < ApplicationController
 
   def join_clan
     @clans = Clan.all
-    @user = current_user
+
   end
 
   def leave_clan
