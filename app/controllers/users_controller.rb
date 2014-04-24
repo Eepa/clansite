@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy, :leave_clan, :join_clan, :update_clan_id]
-  before_action :ensure_that_admin_user, except: [:index, :show, :new, :create, :join_clan, :leave_clan, :update_clan_id]
   before_action :ensure_that_signed_in, except: [:index, :show, :new, :create]
 
   # GET /users

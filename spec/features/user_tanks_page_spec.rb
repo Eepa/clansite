@@ -116,6 +116,21 @@ describe "UserTanks page" do
 
     end
 
+    it "user should be able to visit edit user_tank page and not be able to edit user_tank incorrectly" do
+
+      visit edit_user_tank_path(user_tank)
+
+      expect(current_path).to eq(edit_user_tank_path(user_tank))
+      fill_in('user_tank_rating', with: "")
+
+      click_button('Edit a tank')
+
+      expect(current_path).to eq(user_tank_path(user_tank))
+
+      expect(page).to have_content 'prohibited this user_tank from being saved:'
+
+    end
+
     it "user should be able to add tank to himself" do
       FactoryGirl.create(:tank, name:"Hummel", country: country, style:style)
       visit new_user_tank_path
@@ -131,6 +146,21 @@ describe "UserTanks page" do
 
     end
 
+    it "user should not be able to add tank to himself with incorrect rating" do
+      FactoryGirl.create(:tank, name:"Hummel", country: country, style:style)
+      visit new_user_tank_path
+
+      select('Hummel', from:'user_tank[tank_id]')
+      fill_in('user_tank_rating', with: "")
+
+      click_button('Add a tank')
+
+      expect(current_path).to eq(user_tanks_path)
+
+      expect(page).to have_content 'prohibited this user_tank from being saved:'
+
+    end
+
     it "if user has all tanks cannot add a new tank" do
       FactoryGirl.create(:tank, name:"Hummel", country: country, style:style)
       visit new_user_tank_path
@@ -143,6 +173,10 @@ describe "UserTanks page" do
       expect(page).to have_content 'The tank was successfully added to your account!'
       expect(page).to have_content 'Rating: 45'
       expect(page).to have_content 'Tank: Hummel'
+
+      visit new_user_tank_path
+
+      expect(page).to have_content 'You already have all the tanks! '
     end
 
     it "user should be able to delete user_tank" do
@@ -160,6 +194,41 @@ describe "UserTanks page" do
     end
 
 
+
+  end
+
+  describe "when user_tank exist and user is signed in and not admin" do
+
+    let!(:clan){FactoryGirl.create(:clan)}
+    let!(:user){FactoryGirl.create(:user, clan: clan)}
+    let!(:user2){FactoryGirl.create(:user, name:"Testi2", admin:false, clan: clan)}
+
+    let!(:country){FactoryGirl.create(:country)}
+    let!(:style){FactoryGirl.create(:style)}
+    let!(:tank){FactoryGirl.create(:tank, country:country, style:style)}
+
+    let!(:user_tank){FactoryGirl.create(:user_tank, user:user, tank:tank)}
+    let!(:user_tank2){FactoryGirl.create(:user_tank, user:user2, tank:tank)}
+
+    before :each do
+      sign_in(name:"Testi2", password:"Test1")
+
+    end
+
+    it "user should be able to visit edit user_tank page of somenoe other and not be able to edit user_tank correctly" do
+
+      visit edit_user_tank_path(user_tank)
+
+      expect(current_path).to eq(edit_user_tank_path(user_tank))
+      fill_in('user_tank_rating', with: "87")
+
+      click_button('Edit a tank')
+
+      expect(current_path).to eq(user_tank_path(user_tank))
+
+      expect(page).to have_content 'You cannot update this tank'
+
+    end
 
   end
 

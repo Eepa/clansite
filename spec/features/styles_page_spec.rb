@@ -67,7 +67,7 @@ describe "Styles page" do
 
   end
 
-  describe "when style exist and user is signed in" do
+  describe "when style exist and user is signed in as admin" do
 
     let!(:style){FactoryGirl.create(:style)}
     let!(:user){FactoryGirl.create(:user)}
@@ -94,6 +94,21 @@ describe "Styles page" do
 
     end
 
+    it "user should be able to visit edit style page and not be able edit style incorrectly" do
+
+      visit edit_style_path(style)
+
+      expect(current_path).to eq(edit_style_path(style))
+      fill_in('style_name', with: "")
+      fill_in('style_description', with: "Muutos descriptioniin")
+      click_button('Update Style')
+
+      expect(current_path).to eq(style_path(style))
+
+      expect(page).to have_content 'prohibited this style from being saved:'
+
+    end
+
     it "user should be able to create style" do
 
       visit new_style_path
@@ -108,6 +123,19 @@ describe "Styles page" do
 
     end
 
+    it "user should not be able to create style incorrectly" do
+
+      visit new_style_path
+
+      fill_in('style_name', with: "")
+      fill_in('style_description', with: 'Uusi desc')
+      click_button('Create Style')
+
+      expect(current_path).to eq(styles_path)
+
+      expect(page).to have_content 'prohibited this style from being saved:'
+    end
+
     it "user should be able to delete style" do
 
       visit styles_path
@@ -119,6 +147,40 @@ describe "Styles page" do
 
       expect(page).not_to have_content 'SPG'
 
+    end
+
+
+
+  end
+
+  describe "when styles exist and user is signed in as normal user" do
+
+    let!(:style){FactoryGirl.create(:style)}
+    let!(:user){FactoryGirl.create(:user, admin: false)}
+
+    before :each do
+      sign_in(name:"Testi", password:"Test1")
+
+    end
+
+    it "user should not be able to visit edit style page" do
+
+      visit edit_style_path(style)
+
+      expect(current_path).to eq(signin_path)
+
+
+      expect(page).to have_content 'You should be signed in as admin'
+
+    end
+
+    it "user should not be able to create style" do
+
+      visit new_style_path
+
+      expect(current_path).to eq(signin_path)
+
+      expect(page).to have_content 'You should be signed in as admin'
     end
 
 

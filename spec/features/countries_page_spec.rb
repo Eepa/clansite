@@ -90,6 +90,22 @@ describe "Countries page" do
 
     end
 
+    it "user should be able to visit edit country page and not be able to edit country incorrectly" do
+
+      visit edit_country_path(country)
+
+      expect(current_path).to eq(edit_country_path(country))
+      fill_in('country_name', with: "")
+
+      click_button('Update Country')
+
+      expect(current_path).to eq(country_path(country))
+
+      expect(page).to have_content 'prohibited this country from being saved:'
+
+    end
+
+
     it "user should be able to create country" do
 
       visit new_country_path
@@ -100,6 +116,20 @@ describe "Countries page" do
 
       expect(page).to have_content 'Country was successfully created.'
       expect(page).to have_content 'UUSI'
+
+    end
+
+    it "user should not be able to create country incorrectly" do
+
+      visit new_country_path
+
+      fill_in('country_name', with: "")
+
+      click_button('Create Country')
+
+      expect(current_path).to eq(countries_path)
+
+      expect(page).to have_content 'prohibited this country from being saved:'
 
     end
 
@@ -114,6 +144,40 @@ describe "Countries page" do
 
       expect(page).not_to have_content 'Germany'
 
+    end
+
+
+
+  end
+
+  describe "when countries exist and user is signed in as normal user" do
+
+    let!(:country){FactoryGirl.create(:country)}
+    let!(:user){FactoryGirl.create(:user, admin: false)}
+
+    before :each do
+      sign_in(name:"Testi", password:"Test1")
+
+    end
+
+    it "user should not be able to visit edit country page" do
+
+      visit edit_country_path(country)
+
+      expect(current_path).to eq(signin_path)
+
+
+      expect(page).to have_content 'You should be signed in as admin'
+
+    end
+
+    it "user should not be able to create country" do
+
+      visit new_country_path
+
+      expect(current_path).to eq(signin_path)
+
+      expect(page).to have_content 'You should be signed in as admin'
     end
 
 

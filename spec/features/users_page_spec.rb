@@ -31,6 +31,22 @@ describe "Users page" do
 
   end
 
+  it "should not be able to create new user when given wrong username" do
+
+    visit signup_path
+
+    fill_in('user_name', with:"")
+    fill_in('user_password', with:"Test1")
+    fill_in('user_password_confirmation', with:"Test1")
+    click_button('Create User')
+
+    expect(current_path).to eq(users_path)
+
+    expect(page).to have_content 'prohibited this user from being saved:'
+
+
+  end
+
 
   describe "when users exists" do
 
@@ -177,6 +193,22 @@ describe "Users page" do
       expect(current_path).to eq(user_path(user))
 
       expect(page).to have_content 'User was successfully updated.'
+
+    end
+
+    it "user should be able to visit edit user page and not to be able to edit user incorrectly" do
+
+      visit edit_user_path(user)
+
+      expect(current_path).to eq(edit_user_path(user))
+      fill_in('user_password', with: "MOI")
+      fill_in('user_password_confirmation', with: "Muutos1")
+
+      click_button('Update User')
+
+      expect(current_path).to eq(user_path(user))
+
+      expect(page).to have_content 'prohibited this user from being saved:'
 
     end
 

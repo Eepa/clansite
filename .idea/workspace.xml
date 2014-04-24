@@ -2,6 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7438230-967f-4231-85c9-fa8e5fff6507" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coverage/.last_run.json" afterPath="$PROJECT_DIR$/coverage/.last_run.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coverage/.resultset.json" afterPath="$PROJECT_DIR$/coverage/.resultset.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/features/clans_page_spec.rb" afterPath="$PROJECT_DIR$/spec/features/clans_page_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/features/countries_page_spec.rb" afterPath="$PROJECT_DIR$/spec/features/countries_page_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coverage/index.html" afterPath="$PROJECT_DIR$/coverage/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/features/styles_page_spec.rb" afterPath="$PROJECT_DIR$/spec/features/styles_page_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/features/tank_page_spec.rb" afterPath="$PROJECT_DIR$/spec/features/tank_page_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/features/user_tanks_page_spec.rb" afterPath="$PROJECT_DIR$/spec/features/user_tanks_page_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/features/users_page_spec.rb" afterPath="$PROJECT_DIR$/spec/features/users_page_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="clansite.iws" />
@@ -25,91 +35,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <file leaf-file-name="users_page_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/features/users_page_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="5" selection-start="2730" selection-end="2730" vertical-scroll-proportion="0.0" vertical-offset="1113" max-vertical-offset="1950">
+            <state line="210" column="6" selection-start="4424" selection-end="4493" vertical-scroll-proportion="0.0" vertical-offset="2919" max-vertical-offset="4035">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/styles_controller.rb">
+      <file leaf-file-name="user_tanks_page_spec.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/features/user_tanks_page_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="60" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1230">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tank_page_spec.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spec/features/tank_page_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="0" selection-start="2447" selection-end="2447" vertical-scroll-proportion="0.7106164" vertical-offset="1130" max-vertical-offset="2265">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="4" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="495">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="18" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="780">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/styles/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="0" selection-end="780" vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="645">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="join_clan.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/join_clan.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="25" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="495">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="65" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1380">
+            <state line="228" column="63" selection-start="6166" selection-end="6166" vertical-scroll-proportion="0.9085366" vertical-offset="2824" max-vertical-offset="3615">
               <folding />
             </state>
           </provider>
@@ -144,11 +82,6 @@
         <option value="$PROJECT_DIR$/spec/features/countries_show_page_spec.rb" />
         <option value="$PROJECT_DIR$/spec/features/styles_show_page_spec.rb" />
         <option value="$PROJECT_DIR$/spec/features/tanks_show_page_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/features/clans_page_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/features/countries_page_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/features/styles_page_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/features/tank_page_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/features/user_tanks_page_spec.rb" />
         <option value="$PROJECT_DIR$/spec/features/users_show_page_spec.rb" />
         <option value="$PROJECT_DIR$/app/controllers/clans_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/countries_controller.rb" />
@@ -175,10 +108,15 @@
         <option value="$PROJECT_DIR$/app/views/user_tanks/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/join_clan.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/spec/features/users_page_spec.rb" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/_tank_table.html.erb" />
+        <option value="$PROJECT_DIR$/spec/features/styles_page_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/features/countries_page_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/features/clans_page_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/features/tank_page_spec.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/spec/features/users_page_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/features/user_tanks_page_spec.rb" />
       </list>
     </option>
   </component>
@@ -476,14 +414,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="959" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27528676" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27528676" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -515,31 +453,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/models/clan_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="40" selection-end="903" vertical-scroll-proportion="0.06726457" vertical-offset="0" max-vertical-offset="780" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/clan.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="161" selection-end="161" vertical-scroll-proportion="0.13452914" vertical-offset="0" max-vertical-offset="669" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/country.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="669" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/clans_page_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="0" selection-start="2636" selection-end="2636" vertical-scroll-proportion="0.0" vertical-offset="1260" max-vertical-offset="1950" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="49" selection-end="49" vertical-scroll-proportion="0.023255814" vertical-offset="0" max-vertical-offset="645" />
@@ -700,9 +613,42 @@
         <state line="29" column="11" selection-start="897" selection-end="897" vertical-scroll-proportion="-16.875" vertical-offset="30" max-vertical-offset="705" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/user_tanks_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/users/_tank_table.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="42" selection-start="2003" selection-end="2003" vertical-scroll-proportion="0.88414633" vertical-offset="590" max-vertical-offset="1710" />
+        <state line="11" column="21" selection-start="169" selection-end="169" vertical-scroll-proportion="0.2763819" vertical-offset="0" max-vertical-offset="705" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/features/clans_show_page_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/styles_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="60" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1230">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="4" selection-start="512" selection-end="512" vertical-scroll-proportion="0.43664384" vertical-offset="0" max-vertical-offset="584">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="18" selection-start="376" selection-end="376" vertical-scroll-proportion="0.2598684" vertical-offset="172" max-vertical-offset="780">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/styles/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="0" selection-end="780" vertical-scroll-proportion="0.8519737" vertical-offset="37" max-vertical-offset="645">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
@@ -719,21 +665,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/users_page_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="200" column="53" selection-start="4136" selection-end="4136" vertical-scroll-proportion="0.5115132" vertical-offset="2689" max-vertical-offset="3555" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/join_clan.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="25" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="495">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="5" selection-start="2730" selection-end="2730" vertical-scroll-proportion="0.0" vertical-offset="1113" max-vertical-offset="1950">
+        <state line="2" column="25" selection-start="47" selection-end="47" vertical-scroll-proportion="0.047468353" vertical-offset="0" max-vertical-offset="632">
           <folding />
         </state>
       </provider>
@@ -745,47 +679,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/_tank_table.html.erb">
+    <entry file="file://$PROJECT_DIR$/spec/features/styles_page_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="169" selection-end="169" vertical-scroll-proportion="0.2763819" vertical-offset="0" max-vertical-offset="705" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="4" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="495">
+        <state line="133" column="6" selection-start="3130" selection-end="3247" vertical-scroll-proportion="0.0" vertical-offset="1729" max-vertical-offset="2940">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/spec/features/countries_page_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="18" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="780">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/styles/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="0" selection-end="780" vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="645">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/clans_show_page_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/styles_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="60" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1230">
+        <state line="129" column="6" selection-start="2919" selection-end="3041" vertical-scroll-proportion="0.0" vertical-offset="1624" max-vertical-offset="2895">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/tank_page_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="0" selection-start="2447" selection-end="2447" vertical-scroll-proportion="0.7106164" vertical-offset="1130" max-vertical-offset="2265">
+        <state line="107" column="70" selection-start="2614" selection-end="2614" vertical-scroll-proportion="0.120426826" vertical-offset="1526" max-vertical-offset="3300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="656">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="108" selection-start="154" selection-end="154" vertical-scroll-proportion="-0.4832317" vertical-offset="332" max-vertical-offset="1935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/features/clans_page_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="6" selection-start="2442" selection-end="2511" vertical-scroll-proportion="0.0" vertical-offset="1176" max-vertical-offset="2865">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/user_tanks_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="122" selection-end="122" vertical-scroll-proportion="0.04573171" vertical-offset="0" max-vertical-offset="1710">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/features/users_page_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="210" column="6" selection-start="4424" selection-end="4493" vertical-scroll-proportion="0.0" vertical-offset="2919" max-vertical-offset="4035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/features/user_tanks_page_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="228" column="63" selection-start="6166" selection-end="6166" vertical-scroll-proportion="0.9085366" vertical-offset="2824" max-vertical-offset="3615">
           <folding />
         </state>
       </provider>

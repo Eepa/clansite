@@ -71,7 +71,7 @@ describe "Tanks page" do
 
   end
 
-  describe "when tanks exist and user is signed in" do
+  describe "when tanks exist and user is signed in as admin" do
 
     let!(:tank){FactoryGirl.create(:tank)}
     let!(:user){FactoryGirl.create(:user)}
@@ -105,6 +105,24 @@ describe "Tanks page" do
       expect(page).to have_content 'LT'
     end
 
+    it "user should be able to visit edit tank page and not be able to edit tank incorrectly" do
+
+      visit edit_tank_path(tank)
+
+      expect(current_path).to eq(edit_tank_path(tank))
+      fill_in('tank_name', with: "")
+      fill_in('tank_description', with: "muutettu")
+      select('Britit', from:'tank[country_id]')
+      select('4', from:'tank[tier_number]')
+      select('LT', from:'tank[style_id]')
+      click_button('Update Tank')
+
+      expect(current_path).to eq(tank_path(tank))
+
+      expect(page).to have_content 'prohibited this tank from being saved:'
+
+    end
+
     it "user should be able to create tank" do
 
       visit new_tank_path
@@ -125,6 +143,23 @@ describe "Tanks page" do
       expect(page).to have_content 'LT'
     end
 
+    it "user should not be able to create tank incorrectly" do
+
+      visit new_tank_path
+
+      fill_in('tank_name', with: "")
+      fill_in('tank_description', with: "lisätty")
+      select('Britit', from:'tank[country_id]')
+      select('4', from:'tank[tier_number]')
+      select('LT', from:'tank[style_id]')
+
+      click_button('Create Tank')
+
+      expect(current_path).to eq(tanks_path)
+
+      expect(page).to have_content 'prohibited this tank from being saved:'
+    end
+
     it "user should be able to delete tank" do
 
       visit tanks_path
@@ -136,6 +171,40 @@ describe "Tanks page" do
 
       expect(page).not_to have_content 'IS-7'
 
+    end
+
+
+
+  end
+
+  describe "when tanks exist and user is signed in as normal user" do
+
+    let!(:tank){FactoryGirl.create(:tank)}
+    let!(:user){FactoryGirl.create(:user, admin: false)}
+
+    before :each do
+      sign_in(name:"Testi", password:"Test1")
+
+    end
+
+    it "user should not be able to visit edit tank page" do
+
+      visit edit_tank_path(tank)
+
+      expect(current_path).to eq(signin_path)
+
+
+      expect(page).to have_content 'You should be signed in as admin'
+
+    end
+
+    it "user should not be able to create tank" do
+
+      visit new_tank_path
+
+      expect(current_path).to eq(signin_path)
+
+      expect(page).to have_content 'You should be signed in as admin'
     end
 
 
