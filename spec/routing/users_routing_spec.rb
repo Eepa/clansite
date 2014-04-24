@@ -31,5 +31,18 @@ describe UsersController do
       delete("/users/1").should route_to("users#destroy", :id => "1")
     end
 
+    it "routes to #leave_clan" do
+      put("/leave_clan/1").should route_to("users#leave_clan", :id => "1")
+    end
+
+    it "routes to #update_clan_id" do
+      put("/join_clan/1").should route_to("users#update_clan_id", :id => "1")
+    end
+
+    it "routes to #join_clan" do
+      get("/join_clan/1").should route_to("users#join_clan", :id => "1")
+    end
+
+
   end
 end

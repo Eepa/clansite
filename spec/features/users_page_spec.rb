@@ -245,7 +245,6 @@ describe "Users page" do
 
       visit users_path
 
-
       click_link('Destroy')
 
       expect(current_path).to eq(users_path)
