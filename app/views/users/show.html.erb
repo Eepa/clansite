@@ -20,6 +20,26 @@
 <% end %>
 </p>
 
+<br>
+
+<p>
+<h2><strong>Status:</strong></h2>
+
+
+<% if @user.admin %>
+
+    <p>Admin user</p>
+
+<% else %>
+    <p>Normal user</p>
+
+<% end %>
+
+<%= link_to 'Change status', change_admin_status_user_path, method: :put, data: {confirm: "Are you sure?"} unless current_user.nil? or !current_user.admin or current_user==@user %>
+</p>
+
+<br>
+
 <h2><strong>Tanks:</strong></h2>
 
 <%= render 'tank_table' %>
@@ -27,4 +47,4 @@
 
 <br>
 
-<%= link_to 'Edit', edit_user_path(@user) if current_user %>
+<%= link_to 'Edit', edit_user_path(@user) unless current_user.nil? or !current_user.admin %>

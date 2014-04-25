@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy, :leave_clan, :join_clan, :update_clan_id]
+  before_action :set_user, only: [:show, :edit, :update, :destroy, :leave_clan, :join_clan, :update_clan_id, :change_admin_status]
   before_action :ensure_that_signed_in, except: [:index, :show, :new, :create]
 
   # GET /users
@@ -123,6 +123,14 @@ class UsersController < ApplicationController
 
     end
 
+  end
+
+  def change_admin_status
+    @user.update_attribute :admin, (not @user.admin)
+
+    new_status = @user.admin? ? "admin" : "normal"
+
+    redirect_to :back, notice: "User's status was successfully set to #{new_status}"
   end
 
   private

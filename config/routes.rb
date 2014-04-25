@@ -7,6 +7,7 @@ Clansite::Application.routes.draw do
       get 'join_clan'
       put 'update_clan_id'
       put 'leave_clan'
+      put 'change_admin_status'
     end
   end
 
