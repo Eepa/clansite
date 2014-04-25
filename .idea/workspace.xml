@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7438230-967f-4231-85c9-fa8e5fff6507" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coverage/.last_run.json" afterPath="$PROJECT_DIR$/coverage/.last_run.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coverage/.resultset.json" afterPath="$PROJECT_DIR$/coverage/.resultset.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/clans_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/clans_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/countries_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/countries_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coverage/index.html" afterPath="$PROJECT_DIR$/coverage/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/tanks_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/tanks_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/features/users_page_spec.rb" afterPath="$PROJECT_DIR$/spec/features/users_page_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/join_clan.html.erb" afterPath="$PROJECT_DIR$/app/views/users/join_clan.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" />
     </list>
     <ignored path="clansite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,55 +35,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="join_clan.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/join_clan.html.erb">
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="810" selection-end="810" vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="525">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="38" selection-start="913" selection-end="913" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="990">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="clans_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/clans_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="6" selection-start="1527" selection-end="1559" vertical-scroll-proportion="0.0" vertical-offset="635" max-vertical-offset="1335">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="countries_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/countries_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="42" selection-start="1989" selection-end="1989" vertical-scroll-proportion="0.0" vertical-offset="593" max-vertical-offset="1380">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="7" selection-start="1827" selection-end="1827" vertical-scroll-proportion="-0.30756578" vertical-offset="1642" max-vertical-offset="2250">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/styles_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="0" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.0" vertical-offset="449" max-vertical-offset="1260">
+            <state line="30" column="0" selection-start="647" selection-end="647" vertical-scroll-proportion="0.71202534" vertical-offset="0" max-vertical-offset="632">
               <folding />
             </state>
           </provider>
@@ -148,8 +96,6 @@
         <option value="$PROJECT_DIR$/spec/features/user_tanks_page_spec.rb" />
         <option value="$PROJECT_DIR$/spec/routing/sessions_routing_spec.rb" />
         <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/users/join_clan.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/spec/routing/users_routing_spec.rb" />
         <option value="$PROJECT_DIR$/app/controllers/user_tanks_controller.rb" />
@@ -160,6 +106,8 @@
         <option value="$PROJECT_DIR$/spec/features/users_page_spec.rb" />
         <option value="$PROJECT_DIR$/app/controllers/clans_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/countries_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/users/join_clan.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
       </list>
     </option>
   </component>
@@ -315,28 +263,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clansite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clansite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -367,24 +293,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clansite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clansite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -792,23 +700,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="54" selection-start="508" selection-end="508" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="570">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/routing/users_routing_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="0" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.7906977" vertical-offset="165" max-vertical-offset="810">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="29" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1395">
           <folding />
         </state>
       </provider>
@@ -883,13 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="38" selection-start="913" selection-end="913" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="990">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/tanks_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="0" selection-start="805" selection-end="805" vertical-scroll-proportion="0.9493671" vertical-offset="0" max-vertical-offset="1395">
@@ -904,13 +791,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/join_clan.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="810" selection-end="810" vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/styles_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="0" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.0" vertical-offset="196" max-vertical-offset="1260">
@@ -918,23 +798,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/clans_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="6" selection-start="1527" selection-end="1559" vertical-scroll-proportion="0.0" vertical-offset="635" max-vertical-offset="1335">
+        <state line="124" column="0" selection-start="2216" selection-end="2216" vertical-scroll-proportion="0.35855263" vertical-offset="1642" max-vertical-offset="2250">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/countries_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="42" selection-start="1989" selection-end="1989" vertical-scroll-proportion="0.0" vertical-offset="593" max-vertical-offset="1380">
+        <state line="71" column="42" selection-start="1989" selection-end="1989" vertical-scroll-proportion="0.7468355" vertical-offset="593" max-vertical-offset="1380">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/clans_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="7" selection-start="1827" selection-end="1827" vertical-scroll-proportion="-0.30756578" vertical-offset="1642" max-vertical-offset="2250">
+        <state line="68" column="6" selection-start="1527" selection-end="1559" vertical-scroll-proportion="0.5968992" vertical-offset="635" max-vertical-offset="1335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="38" selection-start="913" selection-end="913" vertical-scroll-proportion="0.627907" vertical-offset="180" max-vertical-offset="990">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/join_clan.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.047468353" vertical-offset="0" max-vertical-offset="632">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="29" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1395">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="647" selection-end="647" vertical-scroll-proportion="0.71202534" vertical-offset="0" max-vertical-offset="632">
           <folding />
         </state>
       </provider>
