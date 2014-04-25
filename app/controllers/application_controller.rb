@@ -37,6 +37,14 @@ class ApplicationController < ActionController::Base
 
   end
 
+  def create_entry_successfully(entry, render_action, notice_text, format)
+
+      format.html { redirect_to entry, notice: notice_text }
+
+      format.json { render action: render_action, status: :created, location: entry }
+
+  end
+
   def modify_entry_fails(entry, render_address, format)
     format.html { render action: render_address }
     format.json { render json: entry.class.errors, status: :unprocessable_entity }
@@ -46,5 +54,7 @@ class ApplicationController < ActionController::Base
     format.html { redirect_to redirect_url }
     format.json { head :no_content }
   end
+
+
 
 end

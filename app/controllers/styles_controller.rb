@@ -30,12 +30,16 @@ class StylesController < ApplicationController
 
     respond_to do |format|
       if @style.save
-        format.html { redirect_to @style, notice: 'Style was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @style }
+        #format.html { redirect_to @style, notice: 'Style was successfully created.' }
+       # format.json { render action: 'show', status: :created, location: @style }
+
+        create_entry_successfully(@style, 'show','Style was successfully created.', format)
 
       else
-        format.html { render action: 'new' }
-        format.json { render json: @style.errors, status: :unprocessable_entity }
+       # format.html { render action: 'new' }
+       # format.json { render json: @style.errors, status: :unprocessable_entity }
+
+        modify_entry_fails(@style, 'new', format)
       end
     end
   end
