@@ -23,6 +23,12 @@
   <%= link_to @tank.style.name, style_path(@tank.style) %>
 </p>
 
+
+<p>
+<h2><strong>Average rating:</strong></h2>
+  <strong><%= @tank.average_rating %></strong>
+</p>
+
 <h2><strong>Users:</strong></h2>
 
 <%= render 'user_table' %>

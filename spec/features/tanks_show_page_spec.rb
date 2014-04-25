@@ -13,7 +13,9 @@ describe "Tank show page" do
     expect(page).to have_content 'Country: Germany'
     expect(page).to have_content 'Tier: 10'
 
-    expect(page).to have_content 'Style: SPG Users: Nobody has this tank!'
+    expect(page).to have_content "Style: SPG"
+    expect(page).to have_content "Average rating:"
+    expect(page).to have_content "Users: Nobody has this tank!"
 
 
   end
