@@ -175,6 +175,7 @@ describe "Users page" do
 
     let!(:user){FactoryGirl.create(:user)}
 
+
     before :each do
       sign_in(name:"Testi", password:"Test1")
 
@@ -253,6 +254,36 @@ describe "Users page" do
 
       expect(page).not_to have_content 'Testi'
       expect(page).to have_content 'Number of users: 0'
+
+    end
+
+
+
+  end
+
+  describe "when two users exist" do
+    let!(:clan){FactoryGirl.create(:clan)}
+    let!(:user){FactoryGirl.create(:user, clan: clan)}
+    let!(:user2){FactoryGirl.create(:user, name: "Testi2", clan: clan)}
+
+    before :each do
+      sign_in(name:"Testi2", password:"Test1")
+
+    end
+
+    it "user should not be able to edit another user" do
+
+      visit edit_user_path(user)
+
+      expect(current_path).to eq(edit_user_path(user))
+      fill_in('user_password', with: "MOI")
+      fill_in('user_password_confirmation', with: "Muutos1")
+
+      click_button('Update User')
+
+      expect(current_path).to eq(user_path(user))
+
+      expect(page).to have_content 'You cannot update this user'
 
     end
 

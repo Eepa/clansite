@@ -30,11 +30,11 @@ class ClansController < ApplicationController
 
     respond_to do |format|
       if @clan.save
-        format.html { redirect_to @clan, notice: 'Clan was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @clan }
+
+        create_entry_successfully(@clan, 'Clan was successfully created.', format)
       else
-        format.html { render action: 'new' }
-        format.json { render json: @clan.errors, status: :unprocessable_entity }
+
+        modify_entry_fails(@clan, 'new', format)
       end
     end
   end
@@ -44,11 +44,16 @@ class ClansController < ApplicationController
   def update
     respond_to do |format|
       if @clan.update(clan_params)
-        format.html { redirect_to @clan, notice: 'Clan was successfully updated.' }
-        format.json { head :no_content }
+       # format.html { redirect_to @clan, notice: 'Clan was successfully updated.' }
+        #format.json { head :no_content }
+
+        modify_entry_successfully(@clan,  'Clan was successfully updated.' , format)
+
       else
-        format.html { render action: 'edit' }
-        format.json { render json: @clan.errors, status: :unprocessable_entity }
+        #format.html { render action: 'edit' }
+        #format.json { render json: @clan.errors, status: :unprocessable_entity }
+
+        modify_entry_fails(@clan, 'edit', format)
       end
     end
   end
@@ -58,8 +63,10 @@ class ClansController < ApplicationController
   def destroy
     @clan.destroy
     respond_to do |format|
-      format.html { redirect_to clans_url }
-      format.json { head :no_content }
+      #format.html { redirect_to clans_url }
+     # format.json { head :no_content }
+
+      destroy_entry(clans_url, format)
     end
   end
 

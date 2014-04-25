@@ -30,11 +30,15 @@ class CountriesController < ApplicationController
 
     respond_to do |format|
       if @country.save
-        format.html { redirect_to @country, notice: 'Country was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @country }
+       # format.html { redirect_to @country, notice: 'Country was successfully created.' }
+      #  format.json { render action: 'show', status: :created, location: @country }
+
+        create_entry_successfully(@country, 'Country was successfully created.', format)
       else
-        format.html { render action: 'new' }
-        format.json { render json: @country.errors, status: :unprocessable_entity }
+       # format.html { render action: 'new' }
+       # format.json { render json: @country.errors, status: :unprocessable_entity }
+
+        modify_entry_fails(@country, 'new', format)
       end
     end
   end
@@ -44,11 +48,15 @@ class CountriesController < ApplicationController
   def update
     respond_to do |format|
       if @country.update(country_params)
-        format.html { redirect_to @country, notice: 'Country was successfully updated.' }
-        format.json { head :no_content }
+       # format.html { redirect_to @country, notice: 'Country was successfully updated.' }
+       # format.json { head :no_content }
+
+        modify_entry_successfully(@country,  'Country was successfully updated.' , format)
       else
-        format.html { render action: 'edit' }
-        format.json { render json: @country.errors, status: :unprocessable_entity }
+       # format.html { render action: 'edit' }
+       # format.json { render json: @country.errors, status: :unprocessable_entity }
+
+        modify_entry_fails(@country, 'edit', format)
       end
     end
   end
@@ -58,8 +66,10 @@ class CountriesController < ApplicationController
   def destroy
     @country.destroy
     respond_to do |format|
-      format.html { redirect_to countries_url }
-      format.json { head :no_content }
+     # format.html { redirect_to countries_url }
+     # format.json { head :no_content }
+
+      destroy_entry(countries_url, format)
     end
   end
 

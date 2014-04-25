@@ -30,13 +30,10 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        #format.html { redirect_to @user, notice: 'User was successfully created.' }
-        #format.json { render action: 'show', status: :created, location: @user }
 
         create_entry_successfully(@user, 'User was successfully created.', format)
       else
-        #format.html { render action: 'new' }
-       # format.json { render json: @user.errors, status: :unprocessable_entity }
+
 
         modify_entry_fails(@user, 'new', format)
       end
@@ -55,12 +52,10 @@ class UsersController < ApplicationController
     respond_to do |format|
 
       if user_params[:name].nil? and @user.update(user_params)
-       # format.html { redirect_to @user, notice: 'User was successfully updated.' }
-       # format.json { head :no_content }
+
         modify_entry_successfully(@user,  'User was successfully updated.' , format)
       else
-       # format.html { render action: 'edit' }
-        #format.json { render json: @user.errors, status: :unprocessable_entity }
+
 
         modify_entry_fails(@user, 'edit', format)
       end
@@ -73,13 +68,11 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.update(:clan_id => update_clan_params[:clan_id])
-        #format.html { redirect_to @user, notice: "You have successfully joined in a clan!" }
-       # format.json { head :no_content }
+
 
         modify_entry_successfully(@user,  "You have successfully joined in a clan!" , format)
       else
-       # format.html { render action: 'join_clan' }
-        #format.json { render json: @user.errors, status: :unprocessable_entity }
+
 
         modify_entry_fails(@user, 'join_clan', format)
       end
@@ -96,8 +89,6 @@ class UsersController < ApplicationController
       @user.destroy
       session[:user_id] = nil
       respond_to do |format|
-       # format.html { redirect_to users_url }
-       # format.json { head :no_content }
 
         destroy_entry(users_url, format)
       end
@@ -121,13 +112,10 @@ class UsersController < ApplicationController
       respond_to do |format|
 
         if @user.update(:clan_id => nil)
-          #format.html { redirect_to @user, notice: "You have successfully left the clan!" }
-         # format.json { head :no_content }
+
 
           modify_entry_successfully(@user,  "You have successfully left the clan!" , format)
         else
-        #  format.html { render action: 'show' }
-        #  format.json { render json: @user.errors, status: :unprocessable_entity }
 
           modify_entry_fails(@user, 'show', format)
         end
