@@ -13,4 +13,6 @@ deploy:
   app: clansite
   on:
     repo: Eepa/clansite
-  run: "rake db:migrate"
+  run: 
+    - "rake db:migrate"
+    - restart

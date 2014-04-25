@@ -37,11 +37,11 @@ class ApplicationController < ActionController::Base
 
   end
 
-  def create_entry_successfully(entry, render_action, notice_text, format)
+  def create_entry_successfully(entry, notice_text, format)
 
       format.html { redirect_to entry, notice: notice_text }
 
-      format.json { render action: render_action, status: :created, location: entry }
+      format.json { render action: 'show', status: :created, location: entry }
 
   end
 

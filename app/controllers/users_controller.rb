@@ -33,7 +33,7 @@ class UsersController < ApplicationController
         #format.html { redirect_to @user, notice: 'User was successfully created.' }
         #format.json { render action: 'show', status: :created, location: @user }
 
-        create_entry_successfully(@user, 'show','User was successfully created.', format)
+        create_entry_successfully(@user, 'User was successfully created.', format)
       else
         #format.html { render action: 'new' }
        # format.json { render json: @user.errors, status: :unprocessable_entity }

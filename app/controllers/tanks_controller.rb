@@ -38,11 +38,15 @@ class TanksController < ApplicationController
 
     respond_to do |format|
       if @tank.save
-        format.html { redirect_to @tank, notice: 'Tank was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @tank }
+      #  format.html { redirect_to @tank, notice: 'Tank was successfully created.' }
+      #  format.json { render action: 'show', status: :created, location: @tank }
+
+        create_entry_successfully(@tank, 'Tank was successfully created.', format)
       else
-        format.html { render action: 'new' }
-        format.json { render json: @tank.errors, status: :unprocessable_entity }
+        #format.html { render action: 'new' }
+        #format.json { render json: @tank.errors, status: :unprocessable_entity }
+
+        modify_entry_fails(@tank, 'new', format)
       end
     end
   end
@@ -52,11 +56,15 @@ class TanksController < ApplicationController
   def update
     respond_to do |format|
       if @tank.update(tank_params)
-        format.html { redirect_to @tank, notice: 'Tank was successfully updated.' }
-        format.json { head :no_content }
+       # format.html { redirect_to @tank, notice: 'Tank was successfully updated.' }
+       # format.json { head :no_content }
+
+        modify_entry_successfully(@tank,  'Tank was successfully updated.' , format)
       else
-        format.html { render action: 'edit' }
-        format.json { render json: @tank.errors, status: :unprocessable_entity }
+        #format.html { render action: 'edit' }
+       # format.json { render json: @tank.errors, status: :unprocessable_entity }
+
+        modify_entry_fails(@tank, 'edit', format)
       end
     end
   end
@@ -66,8 +74,10 @@ class TanksController < ApplicationController
   def destroy
     @tank.destroy
     respond_to do |format|
-      format.html { redirect_to tanks_url }
-      format.json { head :no_content }
+     # format.html { redirect_to tanks_url }
+      #format.json { head :no_content }
+
+      destroy_entry(tanks_url, format)
     end
   end
 
