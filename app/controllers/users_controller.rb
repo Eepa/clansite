@@ -42,33 +42,44 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
+
+    unless @user == current_user
+      redirect_to @user, notice: 'You cannot update this user'
+      return
+    end
+
     respond_to do |format|
-      if @user == current_user
-        if user_params[:name].nil? and @user.update(user_params)
-          format.html { redirect_to @user, notice: 'User was successfully updated.' }
-          format.json { head :no_content }
-        else
-          format.html { render action: 'edit' }
-          format.json { render json: @user.errors, status: :unprocessable_entity }
-        end
+
+      if user_params[:name].nil? and @user.update(user_params)
+       # format.html { redirect_to @user, notice: 'User was successfully updated.' }
+       # format.json { head :no_content }
+        modify_entry_successfully(@user,  'User was successfully updated.' , format)
       else
-        format.html { redirect_to @user, notice: 'You cannot update this user' }
+       # format.html { render action: 'edit' }
+        #format.json { render json: @user.errors, status: :unprocessable_entity }
+
+        modify_entry_fails(@user, 'edit', format)
       end
+
     end
   end
 
 
   def update_clan_id
 
-      respond_to do |format|
-        if @user.update(:clan_id => update_clan_params[:clan_id])
-          format.html { redirect_to @user, notice: "You have successfully joined in a clan!" }
-          format.json { head :no_content }
-        else
-          format.html { render action: 'join_clan' }
-          format.json { render json: @user.errors, status: :unprocessable_entity }
-        end
+    respond_to do |format|
+      if @user.update(:clan_id => update_clan_params[:clan_id])
+        #format.html { redirect_to @user, notice: "You have successfully joined in a clan!" }
+       # format.json { head :no_content }
+
+        modify_entry_successfully(@user,  "You have successfully joined in a clan!" , format)
+      else
+       # format.html { render action: 'join_clan' }
+        #format.json { render json: @user.errors, status: :unprocessable_entity }
+
+        modify_entry_fails(@user, 'join_clan', format)
       end
+    end
 
   end
 
@@ -81,12 +92,14 @@ class UsersController < ApplicationController
       @user.destroy
       session[:user_id] = nil
       respond_to do |format|
-        format.html { redirect_to users_url }
-        format.json { head :no_content }
+       # format.html { redirect_to users_url }
+       # format.json { head :no_content }
+
+        destroy_entry(users_url, format)
       end
 
     else
-       redirect_to users_path, notice:'You cannot delete this user'
+      redirect_to users_path, notice:'You cannot delete this user'
     end
 
 
@@ -98,34 +111,42 @@ class UsersController < ApplicationController
   end
 
   def leave_clan
+    if current_user == @user or current_user.admin
 
-    respond_to do |format|
 
-      if (current_user == @user and @user.update(:clan_id => nil)) or (current_user.admin and @user.update(:clan_id => nil))
-        format.html { redirect_to user_url(@user), notice: "You have successfully left the clan!" }
-        format.json { head :no_content }
-      else
-        format.html { render action: 'show' }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
+      respond_to do |format|
+
+        if @user.update(:clan_id => nil)
+          #format.html { redirect_to @user, notice: "You have successfully left the clan!" }
+         # format.json { head :no_content }
+
+          modify_entry_successfully(@user,  "You have successfully left the clan!" , format)
+        else
+        #  format.html { render action: 'show' }
+        #  format.json { render json: @user.errors, status: :unprocessable_entity }
+
+          modify_entry_fails(@user, 'show', format)
+        end
       end
+
     end
 
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_user
-      @user = User.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_user
+    @user = User.find(params[:id])
+  end
 
   private
-   def update_clan_params
+  def update_clan_params
     params.require(:user).permit(:clan_id)
-   end
+  end
 
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def user_params
-      params.require(:user).permit(:name, :password, :password_confirmation)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def user_params
+    params.require(:user).permit(:name, :password, :password_confirmation)
+  end
 end

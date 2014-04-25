@@ -72,13 +72,13 @@ class TanksController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_tank
-      @tank = Tank.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_tank
+    @tank = Tank.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def tank_params
-      params.require(:tank).permit(:name, :description, :country_id, :tier_number, :style_id)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def tank_params
+    params.require(:tank).permit(:name, :description, :country_id, :tier_number, :style_id)
+  end
 end

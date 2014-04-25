@@ -2,7 +2,13 @@ Clansite::Application.routes.draw do
 
   resources :user_tanks
 
-  resources :users
+  resources :users do
+    member do
+      get 'join_clan'
+      put 'update_clan_id'
+      put 'leave_clan'
+    end
+  end
 
   root 'clans#index'
 
@@ -18,15 +24,10 @@ Clansite::Application.routes.draw do
 
   resources :sessions, only:[:new, :create]
 
-  get 'join_clan/:id', to: 'users#join_clan', as: 'user_join_clan'
-
-  put 'join_clan/:id', to: 'users#update_clan_id', as: 'user_update_clan_id'
-
   get 'signin', to: 'sessions#new'
 
   delete 'signout', to: 'sessions#destroy'
 
-  put 'leave_clan/:id', to: 'users#leave_clan', as: 'user_leave_clan'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

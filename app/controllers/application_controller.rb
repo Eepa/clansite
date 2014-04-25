@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
 
 
+
   def current_user
     return nil if session[:user_id].nil?
 
@@ -27,6 +28,23 @@ class ApplicationController < ActionController::Base
     elsif current_user.admin? == false
       redirect_to signin_path, notice:'You should be signed in as admin'
     end
+  end
+
+  def modify_entry_successfully(entry, notice_text, format)
+
+      format.html { redirect_to entry, notice: notice_text }
+      format.json { head :no_content }
+
+  end
+
+  def modify_entry_fails(entry, render_address, format)
+    format.html { render action: render_address }
+    format.json { render json: entry.class.errors, status: :unprocessable_entity }
+  end
+
+  def destroy_entry(redirect_url, format)
+    format.html { redirect_to redirect_url }
+    format.json { head :no_content }
   end
 
 end

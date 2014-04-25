@@ -64,13 +64,13 @@ class ClansController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_clan
-      @clan = Clan.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_clan
+    @clan = Clan.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def clan_params
-      params.require(:clan).permit(:name, :description)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def clan_params
+    params.require(:clan).permit(:name, :description)
+  end
 end

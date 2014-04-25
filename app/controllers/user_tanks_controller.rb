@@ -58,13 +58,13 @@ class UserTanksController < ApplicationController
     respond_to do |format|
       if @user_tank.user == current_user or current_user.admin
 
-         if @user_tank.update(user_tank_params)
-            format.html { redirect_to @user_tank, notice: 'User tank was successfully updated.' }
-            format.json { head :no_content }
-         else
-            format.html { render action: 'edit' }
-            format.json { render json: @user_tank.errors, status: :unprocessable_entity }
-         end
+        if @user_tank.update(user_tank_params)
+          format.html { redirect_to @user_tank, notice: 'User tank was successfully updated.' }
+          format.json { head :no_content }
+        else
+          format.html { render action: 'edit' }
+          format.json { render json: @user_tank.errors, status: :unprocessable_entity }
+        end
 
       else
         format.html { redirect_to @user_tank, notice:'You cannot update this tank'}
@@ -96,13 +96,13 @@ class UserTanksController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_user_tank
-      @user_tank = UserTank.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_user_tank
+    @user_tank = UserTank.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def user_tank_params
-      params.require(:user_tank).permit(:user_id, :tank_id, :rating)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def user_tank_params
+    params.require(:user_tank).permit(:user_id, :tank_id, :rating)
+  end
 end

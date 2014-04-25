@@ -32,6 +32,7 @@ class StylesController < ApplicationController
       if @style.save
         format.html { redirect_to @style, notice: 'Style was successfully created.' }
         format.json { render action: 'show', status: :created, location: @style }
+
       else
         format.html { render action: 'new' }
         format.json { render json: @style.errors, status: :unprocessable_entity }
@@ -44,11 +45,15 @@ class StylesController < ApplicationController
   def update
     respond_to do |format|
       if @style.update(style_params)
-        format.html { redirect_to @style, notice: 'Style was successfully updated.' }
-        format.json { head :no_content }
+       # format.html { redirect_to @style, notice: 'Style was successfully updated.' }
+       # format.json { head :no_content }
+
+        modify_entry_successfully(@style,  'Style was successfully updated.' , format)
       else
-        format.html { render action: 'edit' }
-        format.json { render json: @style.errors, status: :unprocessable_entity }
+        #format.html { render action: 'edit' }
+        #format.json { render json: @style.errors, status: :unprocessable_entity }
+
+        modify_entry_fails(@style, 'edit', format)
       end
     end
   end
@@ -58,19 +63,21 @@ class StylesController < ApplicationController
   def destroy
     @style.destroy
     respond_to do |format|
-      format.html { redirect_to styles_url }
-      format.json { head :no_content }
+      #format.html { redirect_to styles_url }
+      #format.json { head :no_content }
+
+      destroy_entry(styles_url, format)
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_style
-      @style = Style.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_style
+    @style = Style.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def style_params
-      params.require(:style).permit(:name, :description)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def style_params
+    params.require(:style).permit(:name, :description)
+  end
 end
