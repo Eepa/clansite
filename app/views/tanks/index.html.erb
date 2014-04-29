@@ -25,8 +25,8 @@
         <td><%= tank.average_rating %></td>
 
         <% unless current_user.nil? or !current_user.admin %>
-            <td><%= link_to 'Edit', edit_tank_path(tank) %></td>
-            <td><%= link_to 'Destroy', tank, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to 'Edit', edit_tank_path(tank), class: "btn btn-info"  %></td>
+            <td><%= link_to 'Destroy', tank, method: :delete, data: { confirm: 'Are you sure?' } , class: "btn btn-danger" %></td>
 
 
         <% end %>
@@ -41,4 +41,4 @@
 
 <br>
 
-<%= link_to 'New Tank', new_tank_path unless current_user.nil? or !current_user.admin %>
+<%= link_to 'New Tank', new_tank_path , class: "btn btn-success" unless current_user.nil? or !current_user.admin %>

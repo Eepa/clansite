@@ -16,4 +16,4 @@
 </p>
 
 
-<%= link_to 'Edit', edit_user_tank_path(@user_tank) unless current_user.nil? or !current_user.admin %>
+<%= link_to 'Edit', edit_user_tank_path(@user_tank) , class: "btn btn-info" unless current_user.nil? or !current_user.admin %>

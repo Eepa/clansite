@@ -29,8 +29,8 @@
         <% unless current_user.nil?  %>
 
             <% if current_user == user  %>
-                <td><%= link_to 'Edit', edit_user_path(user) %></td>
-                <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                <td><%= link_to 'Edit', edit_user_path(user), class: "btn btn-info"  %></td>
+                <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } , class: "btn btn-danger" %></td>
 
              <% end %>
         <% end %>
@@ -46,4 +46,4 @@
 
 <br>
 
-<%= link_to 'Create an account', new_user_path %>
+<%= link_to 'Create an account', new_user_path, class: "btn btn-success"  %>

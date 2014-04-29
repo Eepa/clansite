@@ -22,8 +22,8 @@
 
         <% unless current_user.nil?  %>
             <% if current_user == user_tank.user or current_user.admin %>
-                <td><%= link_to 'Edit', edit_user_tank_path(user_tank) %></td>
-                <td><%= link_to 'Destroy', user_tank, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                <td><%= link_to 'Edit', edit_user_tank_path(user_tank), class: "btn btn-info"  %></td>
+                <td><%= link_to 'Destroy', user_tank, method: :delete, data: { confirm: 'Are you sure?' } , class: "btn btn-danger" %></td>
             <% end %>
         <% end %>
 
@@ -38,4 +38,4 @@
 
 <br>
 
-<%= link_to 'Add a new tank', new_user_tank_path if current_user %>
+<%= link_to 'Add a new tank', new_user_tank_path , class: "btn btn-success" if current_user %>

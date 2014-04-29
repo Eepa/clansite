@@ -1,7 +1,7 @@
 <h1>Join a clan</h1>
 
 
-<%= form_for @user, url: update_clan_id_user_path, method: :put do |f| %>
+<%= form_for @user, url: update_clan_id_user_path, method: :put , class: "form" do |f| %>
 
     <% if @user.errors.any? %>
         <div id="error_explanation">
@@ -24,6 +24,6 @@
 
 
     <div class="actions">
-      <%= f.submit "Join clan" %>
+      <%= f.submit "Join clan", class: "btn btn-default" %>
     </div>
 <% end %>

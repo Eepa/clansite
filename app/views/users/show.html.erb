@@ -10,12 +10,12 @@
 
     <p>Not a member of any clan!</p>
 
-    <%= link_to 'Join clan', join_clan_user_path unless current_user.nil? or !current_user.admin %>
+    <%= link_to 'Join clan', join_clan_user_path , class: "btn btn-info" unless current_user.nil? or !current_user.admin %>
 
 <% else %>
    <p> <%= link_to @user.clan.name, clan_path(@user.clan) %> </p>
 
-    <%= link_to 'Leave clan', leave_clan_user_path, method: :put, data: {confirm: "Are you sure?"} unless current_user.nil? or !current_user.admin %>
+    <%= link_to 'Leave clan', leave_clan_user_path, method: :put, data: {confirm: "Are you sure?"} , class: "btn btn-danger" unless current_user.nil? or !current_user.admin %>
 
 <% end %>
 </p>
@@ -35,7 +35,7 @@
 
 <% end %>
 
-<%= link_to 'Change status', change_admin_status_user_path, method: :put, data: {confirm: "Are you sure?"} unless current_user.nil? or !current_user.admin or current_user==@user %>
+<%= link_to 'Change status', change_admin_status_user_path, method: :put, data: {confirm: "Are you sure?"} , class: "btn btn-danger" unless current_user.nil? or !current_user.admin or current_user==@user%>
 </p>
 
 <br>
@@ -47,4 +47,4 @@
 
 <br>
 
-<%= link_to 'Edit', edit_user_path(@user) unless current_user.nil? or !current_user.admin %>
+<%= link_to 'Edit', edit_user_path(@user) , class: "btn btn-info" unless current_user.nil? or !current_user.admin %>

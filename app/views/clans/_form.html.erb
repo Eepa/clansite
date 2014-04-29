@@ -1,4 +1,4 @@
-<%= form_for(@clan) do |f| %>
+<%= form_for @clan, class: "form" do |f| %>
   <% if @clan.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@clan.errors.count, "error") %> prohibited this clan from being saved:</h2>
@@ -11,15 +11,15 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name , class: "form-control"%>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :description %><br>
-    <%= f.text_area :description %>
+    <%= f.text_area :description , class: "form-control"%>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: "btn btn-default"%>
   </div>
 <% end %>

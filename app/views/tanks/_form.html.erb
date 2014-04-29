@@ -1,4 +1,4 @@
-<%= form_for(@tank) do |f| %>
+<%= form_for @tank, class: "form" do |f| %>
   <% if @tank.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@tank.errors.count, "error") %> prohibited this tank from being saved:</h2>
@@ -11,13 +11,13 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name , class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :description %><br>
-    <%= f.text_area :description %>
+    <%= f.text_area :description , class: "form-control"%>
   </div>
   <div class="field">
     <%= f.label :country_id %><br>
@@ -26,7 +26,7 @@
 
     <div class="field">
       <%= f.label :tier_number %><br>
-      <%= f.select :tier_number, 1..10, selected: @tank.tier_number %>
+      <%= f.select :tier_number, 1..10, selected: @tank.tier_number%>
     </div>
 
     <div class="field">
@@ -34,6 +34,6 @@
       <%= f.select :style_id, options_from_collection_for_select(@styles, :id, :name, selected: @tank.style_id) %>
     </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: "btn btn-default" %>
   </div>
 <% end %>
