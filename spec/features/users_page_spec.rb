@@ -287,6 +287,40 @@ describe "Users page" do
 
     end
 
+    it "user should be able to change another user's admin-status to normal user" do
+
+      visit user_path(user)
+
+      expect(current_path).to eq(user_path(user))
+      expect(page).to have_content 'Status: Admin user'
+
+      click_link('Change status')
+
+      expect(current_path).to eq(user_path(user))
+
+      expect(page).to have_content "User's status was successfully set to normal"
+      expect(page).to have_content 'Status: Normal user'
+
+    end
+
+    it "user should be able to change another user's admin-status to admin user" do
+
+      visit user_path(user)
+
+      expect(current_path).to eq(user_path(user))
+      expect(page).to have_content 'Status: Admin user'
+
+      click_link('Change status')
+
+      expect(current_path).to eq(user_path(user))
+
+      click_link('Change status')
+
+      expect(page).to have_content "User's status was successfully set to admin"
+      expect(page).to have_content 'Status: Admin user'
+
+    end
+
 
 
   end
