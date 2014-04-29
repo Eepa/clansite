@@ -51,6 +51,37 @@ img {
   }
 }
 
+.btn-default{
+  background-color: #F5F5F5;
+}.btn-default:hover{
+  background-color: #FFFFFF;
+}
+
+
+.btn-info{
+  background-color: #AEE4F6;
+}.btn-info:hover{
+  background-color: #9AC8D7;
+}
+
+
+.btn-danger{
+  background-color: #FBB86B;
+}.btn-danger:hover{
+  background-color: #E8A962;
+}
+
+.btn-success{
+  background-color: #AFF664;
+}.btn-success:hover{
+  background-color: #9FDF5B;
+}
+
+// .navbar {
+//   background-color: #000000;
+// }
+
+
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
 // to make views framework-neutral
