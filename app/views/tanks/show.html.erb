@@ -26,7 +26,11 @@
 
 <p>
 <h2><strong>Average rating:</strong></h2>
-  <strong><%= @tank.average_rating %></strong>
+  <% unless @tank.users.empty? %>
+    <strong><%= round(@tank.average_rating) %></strong>
+  <% else %>
+    <p>Tank has not yet any ratings!</p>
+  <% end %>
 </p>
 
 <h2><strong>Users:</strong></h2>

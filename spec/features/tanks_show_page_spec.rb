@@ -45,26 +45,28 @@ describe "Tank show page" do
 
   end
 
-  #describe "when tank has ratings" do
-  #
-  #  let!(:tank){FactoryGirl.create(:tank)}
-  #  let!(:user){FactoryGirl.create(:user)}
-  #
-  #
-  #  let!(:user_tank){FactoryGirl.create(:user_tank, user: user, tank: tank)}
-  #  let!(:user_tank1){FactoryGirl.create(:user_tank,  tank: tank, rating: 65)}
-  # # let!(:user_tank2){FactoryGirl.create(:user_tank,  tank: tank, rating: 86)}
-  #
-  #
-  #  it "page should show right average rating" do
-  #
-  #    visit tank_path(tank)
-  #
-  #    expect(page).to have_content "Average rating: 69,3"
-  #
-  #  end
-  #
-  #end
+  describe "when tank has ratings" do
+
+
+    let!(:clan){FactoryGirl.create(:clan)}
+    let!(:user){FactoryGirl.create(:user, clan: clan)}
+    let!(:user2){FactoryGirl.create(:user, name:"Testi2", clan: clan)}
+    let!(:user3){FactoryGirl.create(:user, name:"Testi3", clan: clan)}
+
+    let!(:user_tank){FactoryGirl.create(:user_tank, user:user, tank:tank)}
+    let!(:user_tank2){FactoryGirl.create(:user_tank, user:user2, tank:tank, rating:65)}
+    let!(:user_tank3){FactoryGirl.create(:user_tank, user:user3, tank:tank, rating:86)}
+
+
+    it "page should show right average rating" do
+
+      visit tank_path(tank)
+
+      expect(page).to have_content "Average rating: 69.3"
+
+    end
+
+  end
 
 
 

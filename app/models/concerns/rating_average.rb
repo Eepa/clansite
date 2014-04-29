@@ -6,6 +6,7 @@ module RatingAverage
 
 		user_tanks.average :rating
 
+
 	end
 	
 

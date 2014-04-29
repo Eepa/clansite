@@ -43,8 +43,7 @@
 
 <h2><strong>Tanks:</strong></h2>
 
-<%= render 'tank_table' %>
-
+<%= render partial: 'layouts/tank_table', locals: {item: @user, name: "User"} %>
 
 <br>
 

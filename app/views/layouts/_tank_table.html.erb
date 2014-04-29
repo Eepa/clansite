@@ -1,6 +1,6 @@
-<% if @user.tanks.empty? %>
+<% if item.tanks.empty? %>
 
-    <p>User does not have any tanks!</p>
+    <p><%= name %> does not have any tanks!</p>
 
 
 
@@ -14,20 +14,20 @@
         <th>Country</th>
         <th>Tier</th>
         <th>Style</th>
-
+        <th>Average rating</th>
+        <th></th>
       </tr>
       </thead>
 
       <tbody>
-      <% @user.tanks.each do |tank| %>
+      <% item.tanks.distinct.each do |tank| %>
           <tr>
             <td><%= link_to tank.name, tank %></td>
             <td><%= tank.description %></td>
             <td><%= link_to tank.country.name, country_path(tank.country) %></td>
             <td><%= tank.tier_number %></td>
             <td><%= link_to tank.style.name, style_path(tank.style) %></td>
-
-
+            <td><%= tank.average_rating %></td>
           </tr>
       <% end %>
       </tbody>
@@ -37,5 +37,4 @@
 
 <br>
 
-<p><%= link_to 'Add a tank', new_user_tank_path if current_user %></p>
 
