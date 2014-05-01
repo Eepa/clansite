@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7438230-967f-4231-85c9-fa8e5fff6507" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_tank_table.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_tank_table.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tanks/index.html.erb" afterPath="$PROJECT_DIR$/app/views/tanks/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/user_tanks/index.html.erb" afterPath="$PROJECT_DIR$/app/views/user_tanks/index.html.erb" />
     </list>
     <ignored path="clansite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,7 +79,6 @@
         <option value="$PROJECT_DIR$/app/views/styles/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/styles/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/tanks/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/user_tanks/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/user_tanks/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/clans/edit.html.erb" />
@@ -91,6 +87,7 @@
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/tanks/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_tank_table.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/user_tanks/index.html.erb" />
       </list>
     </option>
   </component>
@@ -179,6 +176,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clansite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clansite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user_tanks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -587,11 +606,6 @@
         <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="632" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/user_tanks/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="55" selection-start="499" selection-end="499" vertical-scroll-proportion="0.088607594" vertical-offset="199" max-vertical-offset="855" />
@@ -630,11 +644,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/tanks/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="65" selection-start="764" selection-end="764" vertical-scroll-proportion="0.83386075" vertical-offset="58" max-vertical-offset="690" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/user_tanks/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="74" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.9493671" vertical-offset="0" max-vertical-offset="705" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
@@ -735,6 +744,20 @@
     <entry file="file://$PROJECT_DIR$/app/views/tanks/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="27" selection-start="632" selection-end="646" vertical-scroll-proportion="0.42088607" vertical-offset="94" max-vertical-offset="750">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/user_tanks/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/user_tanks/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="66" selection-start="553" selection-end="553" vertical-scroll-proportion="0.3591772" vertical-offset="73" max-vertical-offset="705">
           <folding />
         </state>
       </provider>
