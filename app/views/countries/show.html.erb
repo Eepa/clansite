@@ -2,6 +2,16 @@
 
 <h1><%= @country.name %></h1>
 
+<p>
+  <h2><strong>Tanks:</strong></h2>
+
+
+  <%= render partial: 'layouts/tank_table', locals: {item: @country, name: "Country"} %>
+</p>
+
+
 
 
 <%= link_to 'Edit', edit_country_path(@country) , class: "btn btn-info" if check_if_allowed_to_see_link %>
+
+

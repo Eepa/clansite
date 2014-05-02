@@ -9,4 +9,15 @@
   <%= @style.description %>
 </p>
 
+<p>
+  <h2><strong>Tanks:</strong></h2>
+
+
+  <%= render partial: 'layouts/tank_table', locals: {item: @style, name: "Style"} %>
+</p>
+
 <%= link_to 'Edit', edit_style_path(@style), class: "btn btn-info"  if check_if_allowed_to_see_link %>
+
+
+
+
