@@ -9,7 +9,7 @@ describe "User show page" do
     visit user_path(user)
 
     click_link("Leave clan")
-    click_link("signout")
+    click_link("Signout")
 
     visit user_path(user)
 

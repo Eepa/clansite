@@ -37,4 +37,4 @@
 
 <%= render 'user_table' %>
 
-<%= link_to 'Edit', edit_tank_path(@tank), class: "btn btn-info"  unless current_user.nil? or !current_user.admin %>
+<%= link_to 'Edit', edit_tank_path(@tank), class: "btn btn-info"  if check_if_allowed_to_see_link %>

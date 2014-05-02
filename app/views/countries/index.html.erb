@@ -15,7 +15,7 @@
       <tr>
         <td><%= link_to country.name, country %></td>
 
-        <% unless current_user.nil? or !current_user.admin %>
+        <% if check_if_allowed_to_see_link %>
 
             <td><%= link_to 'Edit', edit_country_path(country) , class: "btn btn-info" %></td>
             <td><%= link_to 'Destroy', country, method: :delete, data: { confirm: 'Are you sure?' } , class: "btn btn-danger" %></td>
@@ -32,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Country', new_country_path , class: "btn btn-success" unless current_user.nil? or !current_user.admin %>
+<%= link_to 'New Country', new_country_path , class: "btn btn-success" if check_if_allowed_to_see_link %>

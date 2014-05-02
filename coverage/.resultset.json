@@ -303,6 +303,13 @@
         26,
         null,
         null,
+        null,
+        1,
+        104,
+        81,
+        null,
+        23,
+        null,
         null
       ],
       "/home/wadror/wadpro/clansite/app/helpers/clans_helper.rb": [
@@ -3196,6 +3203,6 @@
         null
       ]
     },
-    "timestamp": 1398971645
+    "timestamp": 1399059147
   }
 }

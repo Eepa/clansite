@@ -151,7 +151,7 @@ describe "Users page" do
 
 
 
-      click_link("signout")
+      click_link("Signout")
       expect(current_path).to eq(root_path)
 
     end

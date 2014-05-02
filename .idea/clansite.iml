@@ -155,7 +155,7 @@
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.25.1, rbenv: 2.0.0-p353) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_portile (v0.5.3, rbenv: 2.0.0-p353) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v4.7.5, rbenv: 2.0.0-p353) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.9.2, rbenv: 2.0.0-p353) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.9.3, rbenv: 2.0.0-p353) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.6.1, rbenv: 2.0.0-p353) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v0.17.1, rbenv: 2.0.0-p353) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="polyglot (v0.3.4, rbenv: 2.0.0-p353) [gem]" level="application" />

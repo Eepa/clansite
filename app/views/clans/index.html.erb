@@ -17,7 +17,7 @@
         <td><%= link_to clan.name, clan %></td>
         <td><%= clan.description %></td>
 
-        <% unless current_user.nil? or !current_user.admin %>
+        <% if check_if_allowed_to_see_link %>
 
             <td><%= link_to 'Edit', edit_clan_path(clan), class: "btn btn-info"  %></td>
             <td><%= link_to 'Destroy', clan, method: :delete, data: { confirm: 'Are you sure?' } , class: "btn btn-danger" %></td>
@@ -37,4 +37,4 @@
 
 
 
-<%= link_to 'New Clan', new_clan_path , class: "btn btn-success"  unless current_user.nil? or !current_user.admin %>
+<%= link_to 'New Clan', new_clan_path , class: "btn btn-success" if check_if_allowed_to_see_link %>
