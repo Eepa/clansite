@@ -8,3 +8,7 @@ Linkki sovelluksen dokumentaatioon: https://github.com/Eepa/clansite/wiki
 {<img src="https://travis-ci.org/Eepa/clansite.png?branch=master" alt="Build Status" />}[https://travis-ci.org/Eepa/clansite]
 
 {<img src="https://codeclimate.com/github/Eepa/clansite.png" />}[https://codeclimate.com/github/Eepa/clansite]
+
+{<img src="https://coveralls.io/repos/Eepa/clansite/badge.png" alt="Coverage Status" />}[https://coveralls.io/r/Eepa/clansite]
+
+
